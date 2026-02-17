@@ -1,7 +1,5 @@
 # 共通ベースイメージ
 FROM node:20-alpine AS base
-# ミラーサイトを日本のミラーに変更
-RUN sed -i 's/dl-cdn.alpinelinux.org/mirror.kakao.com/g' /etc/apk/repositories
 WORKDIR /app
 RUN apk add --no-cache sqlite bash
 
