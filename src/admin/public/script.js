@@ -39,11 +39,16 @@ function renderConfig(config) {
     });
 
     // Custom fields
-    // Collector Github User ID
+    // Collector Github User ID & Interval
     fieldsDiv.innerHTML += `
         <div class="input-group">
-            <label for="github-id">GitHub $20 Target User ID</label>
+            <label for="github-id">GitHub Target User ID</label>
             <input type="text" id="github-id" value="${config.collector.github_user_id}">
+        </div>
+        <div class="input-group">
+            <label for="interval-hours">Collection Interval (Hours)</label>
+            <input type="number" id="interval-hours" value="${config.collector.interval_hours || 24}" min="1" max="168">
+            <p class="help-text">1時間から1週間(168時間)の間で設定可能です。</p>
         </div>
         <div class="input-group">
             <label for="site-title">Site Title</label>
@@ -77,7 +82,7 @@ async function saveConfig() {
         collector: {
             enabled: document.getElementById('sw-collector').checked,
             github_user_id: document.getElementById('github-id').value,
-            interval_hours: 24
+            interval_hours: parseInt(document.getElementById('interval-hours').value) || 24
         },
         analyzer: {
             enabled: document.getElementById('sw-analyzer').checked,

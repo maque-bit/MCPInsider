@@ -1,62 +1,114 @@
 const fs = require('fs');
 const path = require('path');
-const { GoogleGenerativeAI } = require("@google/generative-ai");
-require('dotenv').config({ path: '../config/.env' });
+const { GoogleGenerativeAI } = require('@google/generative-ai');
 
-const CONFIG_PATH = path.join(__dirname, '../config/config.json');
+// GitHub Actions Secrets またはローカルの .env を読み込む
+if (!process.env.GEMINI_API_KEY) {
+    require('dotenv').config({ path: '../config/.env' });
+}
+
 const RAW_DATA_PATH = path.join(__dirname, '../data/raw_data.json');
-const ANALYSIS_PATH = path.join(__dirname, '../data/analysis_result.json');
+const ANALYZED_DATA_PATH = path.join(__dirname, '../data/analyzed_data.json');
+const LOG_FILE = path.join(__dirname, '../data/analyzer.log');
 
-async function run() {
-    const config = JSON.parse(fs.readFileSync(CONFIG_PATH, 'utf8'));
+function log(message) {
+    const timestamp = new Date().toISOString();
+    const formattedMessage = `[${timestamp}] ${message}\n`;
+    console.log(message);
+    fs.appendFileSync(LOG_FILE, formattedMessage);
+}
 
-    if (!config.analyzer.enabled) {
-        console.log('Analyzer is disabled. Skipping...');
-        return;
-    }
+const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
-    if (!fs.existsSync(RAW_DATA_PATH)) {
-        console.log('No raw data found. Run collector first.');
-        return;
-    }
+const SUPPORTED_MODELS = ["gemini-1.5-flash", "gemini-2.0-flash", "gemini-1.5-pro", "gemini-pro"];
+let currentModelIndex = 0;
 
-    if (!process.env.GEMINI_API_KEY) {
-        console.error('GEMINI_API_KEY is missing in .env');
-        return;
-    }
+async function analyzeProject(project) {
+    while (currentModelIndex < SUPPORTED_MODELS.length) {
+        let modelId = SUPPORTED_MODELS[currentModelIndex];
+        let model = genAI.getGenerativeModel({ model: modelId });
 
-    console.log('Starting AI analysis...');
+        const prompt = `
+あなたは技術トレンドに敏感なエンジニア兼テックライターです。
+以下の MCP (Model Context Protocol) サーバーのリポジトリ情報を分析し、開発者がワクワクするような紹介文を日本語で作成してください。
 
-    const rawData = JSON.parse(fs.readFileSync(RAW_DATA_PATH, 'utf8'));
-    const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-    const model = genAI.getGenerativeModel({ model: config.analyzer.model });
+リポジトリ名: ${project.name}
+GitHub説明: ${project.description}
+URL: ${project.url}
 
-    const prompt = `以下のMCPリポジトリリストを分析し、トレンドスコア（0-100）と実装難易度（Easy/Medium/Hard）、および1行の日本語要約を作成してください。JSON形式で出力してください。
-    
-    データ: ${JSON.stringify(rawData.repositories)}`;
+以下の項目を含むJSON形式で出力してください：
+1. summary_ja: 技術者が「これは便利だ！」「面白そうだ！」と思えるような、魅力的な日本語概要（140文字程度）。
+2. catchphrase: 好奇心を刺激する一言キャッチコピー。
+3. wow_factor: このプロジェクトの技術的にユニークな点や、エンジニアが驚くポイント（1文）。
+4. dev_utility: このツールを導入することで、開発効率がどれくらい上がるか（1-10の数値）。
+5. category: ['Database', 'Search', 'API', 'Utility', 'Automation', 'DevTools', 'Communication'] から最適な複数を。
+6. safety_level: 'Safe' (読み取りのみ等), 'Caution' (書き込み/実行権限が必要等), 'Unknown'。
+7. use_cases: 具体的に「これを使って〇〇ができる」というシナリオを2-3個。
 
-    try {
-        const result = await model.generateContent(prompt);
-        const response = await result.response;
-        const text = response.text();
+出力は純粋なJSONのみにしてください（マークダウンのコードブロックは不要）。
+`;
 
-        // JSONの抽出・パース（簡易版）
-        const jsonMatch = text.match(/\{[\s\S]*\}/);
-        if (jsonMatch) {
-            const analysis = JSON.parse(jsonMatch[0]);
-            fs.writeFileSync(ANALYSIS_PATH, JSON.stringify({
-                timestamp: new Date().toISOString(),
-                analysis
-            }, null, 2));
-            console.log('Analysis completed. Result saved to analysis_result.json');
-        } else {
-            console.error('Failed to parse AI response as JSON');
+        try {
+            const result = await model.generateContent(prompt);
+            const response = await result.response;
+            const text = response.text().trim();
+            const cleanJson = text.replace(/```json|```/g, '');
+            return JSON.parse(cleanJson);
+        } catch (err) {
+            if (err.message.includes('404') || err.message.includes('not found')) {
+                log(`Model ${modelId} not found, trying next...`);
+                currentModelIndex++;
+                continue;
+            }
+            log(`Failed to analyze ${project.name} with ${modelId}: ${err.message}`);
+            return null;
         }
+    }
+    log('No working models found in SUPPORTED_MODELS.');
+    return null;
+}
+
+async function main() {
+    try {
+        if (!fs.existsSync(RAW_DATA_PATH)) {
+            log('No raw_data.json found. Run collector first.');
+            return;
+        }
+
+        const rawData = JSON.parse(fs.readFileSync(RAW_DATA_PATH, 'utf8'));
+        const existingData = fs.existsSync(ANALYZED_DATA_PATH)
+            ? JSON.parse(fs.readFileSync(ANALYZED_DATA_PATH, 'utf8'))
+            : { projects: [] };
+
+        log(`Analyzing ${rawData.repositories.length} repositories...`);
+
+        const analyzedProjects = [];
+        // 並列実行だとレート制限にかかる可能性があるため、順次処理
+        for (const repo of rawData.repositories) {
+            log(`- Analyzing ${repo.name}...`);
+            const analysis = await analyzeProject(repo);
+            if (analysis) {
+                analyzedProjects.push({
+                    ...repo,
+                    analysis: analysis
+                });
+            }
+            // レート制限への配慮
+            await new Promise(resolve => setTimeout(resolve, 2000));
+        }
+
+        const finalResult = {
+            last_updated: new Date().toISOString(),
+            total_count: analyzedProjects.length,
+            projects: analyzedProjects
+        };
+
+        fs.writeFileSync(ANALYZED_DATA_PATH, JSON.stringify(finalResult, null, 2));
+        log(`Analysis completed. Output saved to analyzed_data.json.`);
+
     } catch (err) {
-        console.error('Analysis failed:', err.message);
+        log(`Fatal error during analysis: ${err.message}`);
     }
 }
 
-// 1時間おきに実行
-setInterval(run, 3600000);
-run();
+main();

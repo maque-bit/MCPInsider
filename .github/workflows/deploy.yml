@@ -31,7 +31,7 @@ jobs:
       - name: Build Web
         run: npm run build --prefix src/web
         env:
-          GH_PAGES_BASE: ${{ secrets.GH_PAGES_BASE }}
+          GH_PAGES_BASE: ${{ vars.GH_PAGES_BASE }}
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -85,4 +85,6 @@ jobs:
           cache-to: type=gha,mode=max
           build-args: |
             GEMINI_API_KEY=${{ secrets.GEMINI_API_KEY }}
-            GH_PAGES_BASE=${{ secrets.GH_PAGES_BASE }}
+            GH_TOKEN=${{ secrets.GH_TOKEN }}
+            GH_PAGES_BASE=${{ vars.GH_PAGES_BASE }}
+            NODE_ENV=${{ vars.NODE_ENV }}
