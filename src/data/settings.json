@@ -1,5 +1,5 @@
 {
   "maintenance_mode": false,
   "auto_publish": false,
-  "retention_days": 30
+  "retention_days": 7
 }
