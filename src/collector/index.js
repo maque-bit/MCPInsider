@@ -114,8 +114,21 @@ async function run() {
 
 function scheduleNext() {
     try {
+        if (!fs.existsSync(CONFIG_PATH)) {
+            log(`Config file not found at ${CONFIG_PATH}. Using defaults.`);
+            const intervalHours = 24;
+            if (currentIntervalHours !== intervalHours) {
+                log(`Setting default schedule: every ${intervalHours} hours`);
+                if (collectionTimer) clearInterval(collectionTimer);
+                currentIntervalHours = intervalHours;
+                const ms = intervalHours * 3600000;
+                collectionTimer = setInterval(run, ms);
+            }
+            return;
+        }
+
         const config = JSON.parse(fs.readFileSync(CONFIG_PATH, 'utf8'));
-        const intervalHours = config.collector.interval_hours || 24;
+        const intervalHours = config.collector?.interval_hours || 24;
 
         if (currentIntervalHours !== intervalHours) {
             log(`Updating schedule: every ${intervalHours} hours`);
@@ -131,13 +144,17 @@ function scheduleNext() {
 }
 
 // Configファイルの監視
-fs.watch(CONFIG_PATH, (eventType) => {
-    if (eventType === 'change') {
-        log('Config file changed. Reloading schedule...');
-        // ファイル書き込み完了を待つために少し待機
-        setTimeout(scheduleNext, 100);
-    }
-});
+if (fs.existsSync(CONFIG_PATH)) {
+    fs.watch(CONFIG_PATH, (eventType) => {
+        if (eventType === 'change') {
+            log('Config file changed. Reloading schedule...');
+            // ファイル書き込み完了を待つために少し待機
+            setTimeout(scheduleNext, 100);
+        }
+    });
+} else {
+    log(`Watching skipped: Config file not found at ${CONFIG_PATH}`);
+}
 
 // 初回実行とスケジュール設定
 scheduleNext();

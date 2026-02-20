@@ -1,0 +1,2599 @@
+{
+  "last_updated": "2026-02-20T08:47:47.817Z",
+  "total_count": 89,
+  "projects": [
+    {
+      "name": "PrefectHQ/fastmcp",
+      "stars": 22997,
+      "description": "🚀 The fast, Pythonic way to build MCP servers and clients.",
+      "url": "https://github.com/PrefectHQ/fastmcp",
+      "updated_at": "2026-02-20T05:36:39Z",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "analysis": {
+        "summary_ja": "PrefectHQ発、爆速Python製MCPサーバー/クライアント構築ツール！非同期処理でパフォーマンス向上、型ヒントで保守性も◎。API開発を強力に支援します。",
+        "catchphrase": "MCP開発、ロケットスタート🚀",
+        "wow_factor": "PythonicなAPI設計と非同期処理の組み合わせにより、従来のMCPサーバー構築に比べて圧倒的なパフォーマンスと開発効率を実現します。",
+        "dev_utility": 9,
+        "category": [
+          "API",
+          "Automation",
+          "DevTools"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "分散タスクキューシステムの構築",
+          "リアルタイムデータストリーミング基盤の開発",
+          "スケーラブルなマイクロサービスアーキテクチャの実装"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:40:48.845Z"
+    },
+    {
+      "name": "microsoft/mcp-for-beginners",
+      "stars": 14428,
+      "description": "This open-source curriculum introduces the fundamentals of Model Context Protocol (MCP) through real-world, cross-language examples in .NET, Java, TypeScript, JavaScript, Rust and Python. Designed for developers, it focuses on practical techniques for building modular, scalable, and secure AI workflows from session setup to service orchestration.",
+      "url": "https://github.com/microsoft/mcp-for-beginners",
+      "updated_at": "2026-02-20T07:15:34Z",
+      "language": "Jupyter Notebook",
+      "license": "MIT",
+      "analysis": {
+        "summary_ja": "Microsoft発、最先端AIワークフロー構築を学ぶ！.NET, Java, Python等、多様な言語でMCPの基礎を習得。モジュール化、スケーラビリティ、セキュリティも網羅した実践的入門教材。",
+        "catchphrase": "AIワークフローを自在に操る、秘密の呪文を手に入れろ！",
+        "wow_factor": "異なる言語で記述されたAIコンポーネントを、MCPを用いてシームレスに連携させ、言語の壁を超えたスケーラブルなAIアプリケーションを構築できる点。",
+        "dev_utility": 8,
+        "category": [
+          "API",
+          "DevTools",
+          "Automation"
+        ],
+        "safety_level": "Safe",
+        "use_cases": [
+          "多言語対応のチャットボットを、バックエンド処理をPython、フロントエンドをTypeScriptで構築し、MCPで連携させる。",
+          "画像認識API(Rust)と自然言語処理API(.NET)をMCPで統合し、高度な画像キャプション生成システムを構築する。",
+          "マイクロサービスアーキテクチャで構築されたAI基盤上で、異なる言語で書かれたサービス間連携をMCPで実現し、柔軟性と保守性を向上させる。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:40:53.754Z"
+    },
+    {
+      "name": "ruvnet/claude-flow",
+      "stars": 14256,
+      "description": "🌊 The leading agent orchestration platform for Claude. Deploy intelligent multi-agent swarms, coordinate autonomous workflows, and build conversational AI systems. Features    enterprise-grade architecture, distributed swarm intelligence, RAG integration, and native Claude Code support via MCP protocol. Ranked #1 in agent-based frameworks.",
+      "url": "https://github.com/ruvnet/claude-flow",
+      "updated_at": "2026-02-20T06:52:26Z",
+      "language": "TypeScript",
+      "license": "MIT",
+      "analysis": {
+        "summary_ja": "Claude特化エージェント連携プラットフォーム「Claude Flow」。自律型ワークフロー、会話AI、高度なRAG、分散スワーム知能…エンタープライズ級の構成で、Claudeの可能性を最大限に引き出す！MCPサポート。",
+        "catchphrase": "Claudeエージェント開発の未来が、今、ここに。",
+        "wow_factor": "分散スワーム知能とRAG統合により、Claudeエージェントが複雑なタスクを自律的に連携して解決する様子は、まさに圧巻です。",
+        "dev_utility": 9,
+        "category": [
+          "Automation",
+          "API",
+          "DevTools",
+          "Communication"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "顧客対応チャットボットを構築し、複雑な問い合わせも複数のエージェントが連携して解決する。",
+          "RAGを活用したナレッジベース検索システムを構築し、Claudeエージェントが最適な情報を抽出・要約して提供する。",
+          "自動化されたデータ分析パイプラインを構築し、複数のClaudeエージェントがデータを収集、分析、レポート作成まで行う。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:40:58.576Z"
+    },
+    {
+      "name": "mcp-use/mcp-use",
+      "stars": 9203,
+      "description": "The fullstack MCP framework to develop MCP Apps for ChatGPT / Claude & MCP Servers for AI Agents.",
+      "url": "https://github.com/mcp-use/mcp-use",
+      "updated_at": "2026-02-20T03:59:25Z",
+      "language": "TypeScript",
+      "license": "MIT",
+      "analysis": {
+        "summary_ja": "ChatGPT/Claude向けアプリとAIエージェント用サーバーをフルスタックで開発！MCPフレームワークで未来を創ろう。革新的なアプリ開発を体験せよ！",
+        "catchphrase": "AIアプリ開発、次のステージへ。",
+        "wow_factor": "ChatGPTやClaudeと連携するAIエージェントアプリを、フルスタックで迅速かつ容易に開発できる、革新的なフレームワークです。",
+        "dev_utility": 8,
+        "category": [
+          "API",
+          "Utility",
+          "Automation",
+          "DevTools"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "顧客対応AIアシスタントをChatGPT上で開発し、問い合わせ対応を自動化する。",
+          "Claudeと連携し、特定業界向けナレッジグラフを構築・検索するAIエージェントを開発する。",
+          "社内ドキュメントを解析し、必要な情報を自動的に抽出・要約するAIアプリを構築する。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:41:03.074Z"
+    },
+    {
+      "name": "lastmile-ai/mcp-agent",
+      "stars": 8037,
+      "description": "Build effective agents using Model Context Protocol and simple workflow patterns",
+      "url": "https://github.com/lastmile-ai/mcp-agent",
+      "updated_at": "2026-02-20T06:53:55Z",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "analysis": {
+        "summary_ja": "MCPでエージェント開発が爆速化！ワークフローをシンプルに定義し、モデルコンテキストを有効活用。複雑なタスクをスマートに自動化しませんか？",
+        "catchphrase": "エージェント開発、新時代の幕開け！",
+        "wow_factor": "モデルコンテキストプロトコル（MCP）という革新的なアプローチで、エージェントがより効果的にコンテキストを理解し、複雑なタスクを自律的に解決できるようになります。",
+        "dev_utility": 8,
+        "category": [
+          "API",
+          "Utility",
+          "Automation",
+          "DevTools"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "顧客サポートエージェント：過去の会話履歴や顧客情報をMCPで活用し、よりパーソナライズされた応答を生成。",
+          "コンテンツ作成エージェント：指定されたテーマに関する情報を収集し、関連情報をMCPで構造化。高品質な記事やブログ投稿を自動生成。",
+          "タスク自動化エージェント：複数のAPIを連携させ、MCPでワークフローを定義。プロジェクト管理ツールとの連携で、タスクの自動割り当てや進捗管理を実現。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:41:08.092Z"
+    },
+    {
+      "name": "Upsonic/Upsonic",
+      "stars": 7786,
+      "description": "Agent Framework For Fintech and Banks",
+      "url": "https://github.com/Upsonic/Upsonic",
+      "updated_at": "2026-02-19T16:32:31Z",
+      "language": "Python",
+      "license": "MIT",
+      "analysis": {
+        "summary_ja": "金融機関向けAgentフレームワーク「Upsonic」。Fintechの未来を創る革新的な基盤で、複雑な金融処理を自動化し、高度なAIエージェント開発を加速します。銀行業務を再定義せよ！",
+        "catchphrase": "銀行業務をAIで再構築！",
+        "wow_factor": "金融機関の複雑なワークフローを、高度なAIエージェントで柔軟に自動化できる設計思想が秀逸。",
+        "dev_utility": 8,
+        "category": [
+          "API",
+          "Utility",
+          "Automation",
+          "DevTools"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "顧客からの問い合わせ対応をAIエージェントが自動化し、カスタマーサポートの効率を大幅に向上",
+          "ローン審査プロセスを自動化し、迅速かつ正確な審査を実現",
+          "不正取引の検知と対応をAIエージェントがリアルタイムで行い、セキュリティを強化"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:41:12.798Z"
+    },
+    {
+      "name": "grab/cursor-talk-to-figma-mcp",
+      "stars": 6322,
+      "description": "TalkToFigma: MCP integration between Cursor and Figma, allowing Cursor Agentic AI to communicate with Figma for reading designs and modifying them programmatically.",
+      "url": "https://github.com/grab/cursor-talk-to-figma-mcp",
+      "updated_at": "2026-02-19T22:50:14Z",
+      "language": "TypeScript",
+      "license": "MIT",
+      "analysis": {
+        "summary_ja": "CursorエージェントAIがFigmaと直接対話！デザインの読み取りから修正まで自動化し、開発ワークフローを革新。夢のAIアシスタントがデザイン作業を強力サポート。",
+        "catchphrase": "AI、デザインの未来を書き換える。",
+        "wow_factor": "CursorのAIエージェントがFigma APIを駆使し、まるで熟練デザイナーのようにデザインデータを理解・編集できる点が斬新。",
+        "dev_utility": 8,
+        "category": [
+          "API",
+          "Automation",
+          "DevTools",
+          "Communication"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "AIがFigmaのデザインからコンポーネントを抽出し、コードを自動生成。",
+          "UIデザインの変更点をAIが提案し、ワンクリックでFigmaに反映。",
+          "デザインガイドラインに基づき、AIがFigmaのデザインを自動チェックし、修正。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:41:17.515Z"
+    },
+    {
+      "name": "CoplayDev/unity-mcp",
+      "stars": 6076,
+      "description": "Unity MCP acts as a bridge, allowing AI assistants (like Claude, Cursor) to interact directly with your Unity Editor via a local MCP (Model Context Protocol) Client. Give your LLM tools to manage assets, control scenes, edit scripts, and automate tasks within Unity.",
+      "url": "https://github.com/CoplayDev/unity-mcp",
+      "updated_at": "2026-02-20T08:00:21Z",
+      "language": "C#",
+      "license": "MIT",
+      "analysis": {
+        "summary_ja": "UnityエディタとAIアシスタントが直接連携！ClaudeやCursorがUnityを操作し、アセット管理、シーン編集、スクリプト編集を自動化。開発効率を爆上げする夢のツール！",
+        "catchphrase": "Unity開発、AIに丸投げ！？",
+        "wow_factor": "ローカルMCPクライアントを介して、LLMがUnityエディタを直接制御し、これまで手動で行っていた作業を自動化できる点が画期的です。",
+        "dev_utility": 9,
+        "category": [
+          "API",
+          "Utility",
+          "Automation",
+          "DevTools"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "AIアシスタントに指示して、大量のアセットを一括でリネーム・整理する。",
+          "自然言語でスクリプトの修正指示を出し、AIが自動でコードを書き換える。",
+          "AIがゲームのテストプレイを行い、バグを発見・報告する。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:41:22.020Z"
+    },
+    {
+      "name": "firecrawl/firecrawl-mcp-server",
+      "stars": 5545,
+      "description": "🔥 Official Firecrawl MCP Server - Adds powerful web scraping and search to Cursor, Claude and any other LLM clients.",
+      "url": "https://github.com/firecrawl/firecrawl-mcp-server",
+      "updated_at": "2026-02-20T06:18:23Z",
+      "language": "JavaScript",
+      "license": "MIT",
+      "analysis": {
+        "summary_ja": "Firecrawl MCP ServerでLLMにウェブスクレイピングと検索能力を爆速追加！CursorやClaudeが情報収集のプロに進化。データ活用を革新する新時代のAPI。",
+        "catchphrase": "LLMよ、Webを制覇せよ！",
+        "wow_factor": "任意のLLMクライアントに、リアルタイムなWebスクレイピングと高度な検索機能を統合し、まるでLLM自身がWebをクロールしているかのような体験を実現します。",
+        "dev_utility": 8,
+        "category": [
+          "Search",
+          "API",
+          "Utility",
+          "Automation",
+          "DevTools"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "競合製品の価格変動を自動的に監視し、LLMが最適な価格設定を提案。",
+          "特定のキーワードに関する最新ニュースを収集し、LLMが要約を作成してチームに共有。",
+          "特定のWebサイトから技術ドキュメントを収集し、LLMが質問応答システムを構築。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:41:26.624Z"
+    },
+    {
+      "name": "appcypher/awesome-mcp-servers",
+      "stars": 5150,
+      "description": "Awesome MCP Servers - A curated list of Model Context Protocol servers",
+      "url": "https://github.com/appcypher/awesome-mcp-servers",
+      "updated_at": "2026-02-20T04:45:23Z",
+      "language": null,
+      "license": null,
+      "analysis": {
+        "summary_ja": "MCPサーバーの選りすぐりリスト！モデルとコンテキストを繋ぎ、AI開発を加速。ナレッジグラフ構築から複雑なデータ連携まで、可能性は無限大！",
+        "catchphrase": "AI開発の未来を拓く、MCPサーバーの羅針盤。",
+        "wow_factor": "単なるデータストアではなく、モデルがコンテキストを理解するための高度なAPIを提供し、AIの推論能力を飛躍的に向上させます。",
+        "dev_utility": 8,
+        "category": [
+          "Database",
+          "API",
+          "DevTools"
+        ],
+        "safety_level": "Safe",
+        "use_cases": [
+          "ナレッジグラフ構築で、AIチャットボットの回答精度を向上",
+          "構造化データと非構造化データをMCPサーバーに統合し、AIによる高度なデータ分析を実現",
+          "既存のAPIをMCPサーバーでラップし、AIモデルが利用しやすい形に変換"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:41:31.025Z"
+    },
+    {
+      "name": "nanbingxyz/5ire",
+      "stars": 5029,
+      "description": "5ire is a cross-platform desktop AI assistant, MCP client. It compatible with major service providers,  supports local knowledge base and  tools via model context protocol servers .",
+      "url": "https://github.com/nanbingxyz/5ire",
+      "updated_at": "2026-02-19T21:34:04Z",
+      "language": "TypeScript",
+      "license": "NOASSERTION",
+      "analysis": {
+        "summary_ja": "5ireは、クロスプラットフォーム対応のデスクトップAIアシスタント！主要サービス連携、ローカル知識ベース、MCPサーバー経由のツール連携で、あなたの開発ワークフローを激変させます。",
+        "catchphrase": "AIアシスタントの未来形、デスクトップに降臨！",
+        "wow_factor": "Model Context Protocol（MCP）サーバーを介したツール連携により、既存のAIアシスタントでは不可能だった柔軟な機能拡張を実現します。",
+        "dev_utility": 8,
+        "category": [
+          "API",
+          "Utility",
+          "Automation",
+          "DevTools",
+          "Communication"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "ローカルの技術ドキュメントを知識ベースとして活用し、AIアシスタントに質問応答させることで、ドキュメント検索時間を大幅に短縮。",
+          "APIリクエストを自動生成し、テストコードの雛形を作成することで、API開発の効率を向上。",
+          "チーム内のSlackチャンネルと連携し、タスクの進捗状況をリアルタイムで共有することで、コミュニケーションコストを削減。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:41:35.941Z"
+    },
+    {
+      "name": "casibase/casibase",
+      "stars": 4441,
+      "description": "⚡️AI Cloud OS: Open-source enterprise-level AI knowledge base and MCP (model-context-protocol)/A2A (agent-to-agent) management platform with admin UI, user management and Single-Sign-On⚡️, supports ChatGPT, Claude, Llama, Ollama, HuggingFace, etc., chat bot demo: https://ai.casibase.com, admin UI demo: https://ai-admin.casibase.com",
+      "url": "https://github.com/casibase/casibase",
+      "updated_at": "2026-02-19T17:37:22Z",
+      "language": "Go",
+      "license": "Apache-2.0",
+      "analysis": {
+        "summary_ja": "Casibaseは、エンタープライズレベルのAI知識ベース&MCP/A2A管理プラットフォーム！ChatGPT、Claude、Llama、Ollama、HuggingFaceに対応。管理UI、ユーザー管理、SSOも完備で、AI開発を加速します🚀",
+        "catchphrase": "AIの可能性を解き放て！未来を創るOS、Casibase登場。",
+        "wow_factor": "異なるLLM間の連携を標準化するMCPを実装し、エージェント間の自律的なコミュニケーションを可能にするA2Aをサポート、AIエコシステムの構築を容易にします。",
+        "dev_utility": 8,
+        "category": [
+          "Database",
+          "API",
+          "Utility",
+          "Automation",
+          "DevTools",
+          "Communication"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "複数のLLMを連携させた高度な顧客対応チャットボットを構築できる。",
+          "社内ドキュメントを学習させ、ナレッジ共有を自動化できる。",
+          "AIエージェントを活用した、複雑なタスクの自動実行パイプラインを構築できる。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:41:40.701Z"
+    },
+    {
+      "name": "getsentry/XcodeBuildMCP",
+      "stars": 4361,
+      "description": "A Model Context Protocol (MCP) server and CLI that provides tools for agent use when working on iOS and macOS projects.",
+      "url": "https://github.com/getsentry/XcodeBuildMCP",
+      "updated_at": "2026-02-20T05:50:11Z",
+      "language": "TypeScript",
+      "license": "MIT",
+      "analysis": {
+        "summary_ja": "Sentry謹製！iOS/macOS開発の救世主、XcodeBuildMCP爆誕🎉 ビルド情報をModel Context Protocolで一元管理し、エージェント連携を劇的に効率化。デバッグ作業から解放され、創造的な開発に集中しよう🚀",
+        "catchphrase": "ビルドよ、もっと賢くなれ！",
+        "wow_factor": "XcodeのビルドプロセスをMCPで抽象化することで、今までブラックボックスだった部分にアクセスし、高度な自動化と分析を可能にする点が革新的です。",
+        "dev_utility": 9,
+        "category": [
+          "DevTools",
+          "Automation",
+          "Utility"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "CI/CDパイプラインで、ビルド失敗時の詳細な原因特定と自動修正を可能にする。",
+          "ビルド時間のボトルネックを可視化し、最適化提案を自動生成する。",
+          "テスト実行結果とビルド情報を紐付け、問題のあるコミットを迅速に特定する。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:41:45.572Z"
+    },
+    {
+      "name": "exa-labs/exa-mcp-server",
+      "stars": 3820,
+      "description": "Exa MCP for web search and web crawling!",
+      "url": "https://github.com/exa-labs/exa-mcp-server",
+      "updated_at": "2026-02-20T05:47:42Z",
+      "language": "TypeScript",
+      "license": "MIT",
+      "analysis": {
+        "summary_ja": "Exa Labs発、ウェブ検索とクロールを劇的に効率化するMCPサーバー！API連携でデータ抽出を自動化、独自検索エンジンの構築も夢じゃない。ウェブ開発の未来を掴め！",
+        "catchphrase": "ウェブの深淵を、あなたの手に。",
+        "wow_factor": "分散型クローリングとインデックス作成を可能にするスケーラブルなアーキテクチャが、大規模データ処理のボトルネックを解消します。",
+        "dev_utility": 9,
+        "category": [
+          "Search",
+          "API",
+          "Automation",
+          "DevTools"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "競合サイトの価格変動をリアルタイムに監視し、自動で価格戦略を最適化",
+          "特定のキーワードに関するウェブ上の情報を網羅的に収集し、市場調査レポートを自動生成",
+          "独自の検索エンジンを構築し、専門分野に特化した情報検索サービスを提供"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:41:50.280Z"
+    },
+    {
+      "name": "IBM/mcp-context-forge",
+      "stars": 3303,
+      "description": "A Model Context Protocol (MCP) Gateway & Registry. Serves as a central management point for tools, resources, and prompts that can be accessed by MCP-compatible LLM applications. Converts REST API endpoints to MCP, composes virtual MCP servers with added security and observability, and converts between protocols (stdio, SSE, Streamable HTTP).",
+      "url": "https://github.com/IBM/mcp-context-forge",
+      "updated_at": "2026-02-20T08:01:12Z",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "analysis": {
+        "summary_ja": "LLMアプリ開発の救世主！ツール、リソース、プロンプトを一元管理し、REST APIをMCPに変換。セキュリティと監視機能も強化。LLM開発を加速させる次世代ゲートウェイ！",
+        "catchphrase": "LLM開発、もう迷わない。全てを繋ぐ、コンテキストの錬金術。",
+        "wow_factor": "既存のREST APIをMCP対応に変換し、セキュリティと監視機能を付加した仮想MCPサーバーを構築できる点が、まるで錬金術のようです。",
+        "dev_utility": 9,
+        "category": [
+          "API",
+          "Utility",
+          "Automation",
+          "DevTools"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "既存のドキュメント検索APIをMCP化し、LLM搭載チャットボットの知識源として活用。",
+          "社内API群をセキュアなMCP環境に統合し、AIによる業務自動化ワークフローを構築。",
+          "プロンプトエンジニアリングの実験環境を構築し、最適なプロンプトを効率的に発見。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:41:55.092Z"
+    },
+    {
+      "name": "zcaceres/markdownify-mcp",
+      "stars": 2413,
+      "description": "A Model Context Protocol server for converting almost anything to Markdown",
+      "url": "https://github.com/zcaceres/markdownify-mcp",
+      "updated_at": "2026-02-20T04:18:36Z",
+      "language": "TypeScript",
+      "license": "MIT",
+      "analysis": {
+        "summary_ja": "「何でもMarkdownに」を現実に！Model Context Protocolサーバーで、ドキュメント、Webページ、果てはDBデータまで、あらゆる情報をMarkdown形式に変換。ナレッジ共有を爆速化せよ！",
+        "catchphrase": "情報爆発からMarkdownの楽園へ。",
+        "wow_factor": "既存のデータソースに手を加えることなく、API経由でオンデマンドにMarkdown変換を実現する柔軟性が圧巻です。",
+        "dev_utility": 8,
+        "category": [
+          "API",
+          "Utility",
+          "Automation",
+          "DevTools"
+        ],
+        "safety_level": "Safe",
+        "use_cases": [
+          "既存のCMSからコンテンツをMarkdown形式でエクスポートし、静的サイトジェネレーターで再構築。",
+          "APIドキュメントを自動生成し、常に最新の状態に保つ。",
+          "データベースのデータをMarkdown形式で出力し、レポート作成を効率化。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:41:59.493Z"
+    },
+    {
+      "name": "metatool-ai/metamcp",
+      "stars": 2036,
+      "description": "MCP Aggregator, Orchestrator, Middleware, Gateway in one docker",
+      "url": "https://github.com/metatool-ai/metamcp",
+      "updated_at": "2026-02-20T00:48:36Z",
+      "language": "TypeScript",
+      "license": "MIT",
+      "analysis": {
+        "summary_ja": "オールインワンDocker！ MCP(集約/連携/ミドルウェア/GW)がこれ一つで完結。AI時代の複雑なシステムを爆速構築＆運用！もう設定地獄とはオサラバ！",
+        "catchphrase": "MCP、その全部入り。",
+        "wow_factor": "複雑なMCPの各機能をDockerコンテナ一つに凝縮し、驚くほど簡単にデプロイ＆スケーリングを実現。",
+        "dev_utility": 8,
+        "category": [
+          "API",
+          "Utility",
+          "Automation",
+          "DevTools"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "複数のAIモデルを統合したAPIゲートウェイを構築し、多様なAIサービスを効率的に提供。",
+          "マイクロサービス間のデータ連携をオーケストレーションし、複雑なトランザクション処理を自動化。",
+          "ログ集約やモニタリング基盤を構築し、システム全体の可視性と運用効率を向上。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:42:04.204Z"
+    },
+    {
+      "name": "jamubc/gemini-mcp-tool",
+      "stars": 1992,
+      "description": "MCP server that enables AI assistants to interact with Google Gemini CLI, leveraging Gemini's massive token window for large file analysis and codebase understanding",
+      "url": "https://github.com/jamubc/gemini-mcp-tool",
+      "updated_at": "2026-02-20T06:24:39Z",
+      "language": "TypeScript",
+      "license": "NOASSERTION",
+      "analysis": {
+        "summary_ja": "Gemini CLIをAIアシスタントに接続！巨大なトークンウィンドウで、大規模ファイル解析やコードベース理解を支援するMCPサーバー。開発効率を爆上げしよう！",
+        "catchphrase": "Geminiの力を開発現場へ！無限の可能性を解き放て。",
+        "wow_factor": "Geminiの巨大なトークンウィンドウを活かし、従来困難だった巨大ファイルの解析や複雑なコードベースの理解を可能にする点が画期的。",
+        "dev_utility": 8,
+        "category": [
+          "API",
+          "Utility",
+          "DevTools",
+          "Automation"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "AIアシスタントに大規模なログファイルを解析させ、異常検知を自動化",
+          "Geminiに複雑なコードベースの構造を理解させ、リファクタリングの提案を得る",
+          "大量のドキュメントをGeminiに要約させ、必要な情報を迅速に抽出"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:42:08.507Z"
+    },
+    {
+      "name": "genieincodebottle/generative-ai",
+      "stars": 1780,
+      "description": "Comprehensive resources on Generative AI, including a detailed roadmap, projects, use cases, interview preparation, and coding preparation.",
+      "url": "https://github.com/genieincodebottle/generative-ai",
+      "updated_at": "2026-02-19T21:37:42Z",
+      "language": "Jupyter Notebook",
+      "license": "MIT",
+      "analysis": {
+        "summary_ja": "生成AIの羅針盤！ロードマップ、プロジェクト事例、面接対策、コーディング準備…これ一つで生成AI開発に必要な全てが手に入る！今すぐ冒険を始めよう🚀",
+        "catchphrase": "生成AIのフロンティアへ、ボトルの中の魔法を解き放て！",
+        "wow_factor": "詳細なロードマップと実践的なコーディング準備により、理論だけでなく実務レベルでの生成AI理解を深められる点がユニーク。",
+        "dev_utility": 8,
+        "category": [
+          "Utility",
+          "DevTools"
+        ],
+        "safety_level": "Safe",
+        "use_cases": [
+          "生成AIを活用した新規プロジェクトの企画・立案を効率的に進める。",
+          "生成AIエンジニアとしてのキャリアアップに向けた体系的な学習を実現する。",
+          "面接対策を通して、生成AIに関する知識・スキルを効果的にアピールする。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:42:13.011Z"
+    },
+    {
+      "name": "ravitemer/mcphub.nvim",
+      "stars": 1723,
+      "description": "An MCP client for Neovim that seamlessly integrates MCP servers into your editing workflow with an intuitive interface for managing, testing, and using MCP servers with your favorite chat plugins.",
+      "url": "https://github.com/ravitemer/mcphub.nvim",
+      "updated_at": "2026-02-20T01:21:43Z",
+      "language": "Lua",
+      "license": "MIT",
+      "analysis": {
+        "summary_ja": "NeovimでMCPサーバーを使い倒せ！チャット連携もシームレスに。管理、テスト、利用まで、直感的なインターフェースであなたの開発ワークフローを加速します。",
+        "catchphrase": "Neovim × MCPサーバー = 無限の可能性、ここに開花。",
+        "wow_factor": "お気に入りのチャットプラグインとMCPサーバーをNeovim上で高度に統合し、リアルタイムな情報共有と自動化を可能にする点が革新的です。",
+        "dev_utility": 8,
+        "category": [
+          "Utility",
+          "Automation",
+          "DevTools",
+          "Communication"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "Neovimから直接、MCPサーバーに保存されたドキュメントやコードスニペットを検索・参照し、効率的にコーディングできる。",
+          "チーム内のチャットツールと連携し、MCPサーバー上の情報を共有することで、リアルタイムなコラボレーションを実現できる。",
+          "CI/CDパイプラインと連携し、自動的にMCPサーバーに最新のビルド情報を登録することで、リリース管理を効率化できる。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:42:17.515Z"
+    },
+    {
+      "name": "stacklok/toolhive",
+      "stars": 1606,
+      "description": "ToolHive makes deploying MCP servers easy, secure and fun",
+      "url": "https://github.com/stacklok/toolhive",
+      "updated_at": "2026-02-20T04:51:22Z",
+      "language": "Go",
+      "license": "Apache-2.0",
+      "analysis": {
+        "summary_ja": "MCPサーバー構築を爆速＆安全に！ToolHiveで面倒な設定は全部おまかせ。開発者はコードに集中、デプロイはToolHiveにお任せ！🚀",
+        "catchphrase": "MCPサーバー構築、退屈なルーチンから解放へ！",
+        "wow_factor": "ToolHiveは、MCPサーバーの複雑なデプロイメントプロセスを自動化し、セキュリティと使いやすさを両立させた、まさに魔法のようなツールです。",
+        "dev_utility": 8,
+        "category": [
+          "Utility",
+          "Automation",
+          "DevTools"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "開発環境用のMCPサーバーを数分で立ち上げ、テストをすぐに開始できる。",
+          "本番環境へのデプロイを自動化し、人的ミスを削減できる。",
+          "チーム全体でMCPサーバーの設定を共有し、環境の一貫性を保てる。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:42:21.817Z"
+    },
+    {
+      "name": "isaacphi/mcp-language-server",
+      "stars": 1449,
+      "description": "mcp-language-server gives MCP enabled clients access semantic tools like get definition, references, rename, and diagnostics.",
+      "url": "https://github.com/isaacphi/mcp-language-server",
+      "updated_at": "2026-02-20T06:52:58Z",
+      "language": "Go",
+      "license": "BSD-3-Clause",
+      "analysis": {
+        "summary_ja": "MCP対応クライアントに、定義ジャンプ、リファクタリング、診断機能を提供！コード理解を深め、開発効率を爆上げするLanguage Server爆誕🚀",
+        "catchphrase": "コードの裏側を覗き見る、最強の相棒。",
+        "wow_factor": "MCPという先進的なプロトコルを採用し、既存のLanguage Serverとは一線を画す、次世代のセマンティック分析ツールです。",
+        "dev_utility": 9,
+        "category": [
+          "DevTools",
+          "Utility"
+        ],
+        "safety_level": "Safe",
+        "use_cases": [
+          "大規模コードベースで、変数の定義箇所を一瞬で特定し、コードリーディング時間を大幅に短縮。",
+          "安全なリファクタリングを支援。関数の名前変更の影響範囲を正確に把握し、バグの発生を抑制。",
+          "MCP対応IDE/エディタで、リアルタイムなコード診断を受け、コーディングミスを早期に発見・修正。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:42:26.424Z"
+    },
+    {
+      "name": "taylorwilsdon/google_workspace_mcp",
+      "stars": 1439,
+      "description": "Control Gmail, Google Calendar, Docs, Sheets, Slides, Chat, Forms, Tasks, Search & Drive with AI - Comprehensive Google Workspace / G Suite MCP Server & CLI Tool",
+      "url": "https://github.com/taylorwilsdon/google_workspace_mcp",
+      "updated_at": "2026-02-20T08:19:25Z",
+      "language": "Python",
+      "license": "MIT",
+      "analysis": {
+        "summary_ja": "AIでGmail、カレンダー、ドキュメント…Google Workspaceを自由自在に操る！最強MCPサーバー＆CLIツールで、あなたの創造性を爆発させよう🚀",
+        "catchphrase": "Google Workspace、AIでフルハック！",
+        "wow_factor": "包括的なGoogle Workspace APIをAIで制御し、高度な自動化とカスタマイズを実現できる点が革新的です。",
+        "dev_utility": 8,
+        "category": [
+          "API",
+          "Automation",
+          "DevTools",
+          "Communication",
+          "Search"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "AIによるメールの自動分類と重要度付けで、情報過多な受信箱から解放される。",
+          "会議議事録の自動生成とタスク割り当てで、チームの生産性を飛躍的に向上させる。",
+          "Google Drive内のファイルをAIが解析し、関連性の高いドキュメントを瞬時に検索・提示する。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:42:31.030Z"
+    },
+    {
+      "name": "maxritter/claude-pilot",
+      "stars": 1359,
+      "description": "Claude Code is powerful. Pilot makes it reliable. Start a task, grab a coffee, come back to production-grade code. Tests enforced. Context preserved. Quality automated.",
+      "url": "https://github.com/maxritter/claude-pilot",
+      "updated_at": "2026-02-20T08:24:14Z",
+      "language": "TypeScript",
+      "license": "NOASSERTION",
+      "analysis": {
+        "summary_ja": "Claudeのコード生成能力を最大限に引き出す！テスト自動化、コンテキスト維持、品質保証で、コーヒーブレイク中にプロダクション品質のコードが完成。開発効率を爆上げするPilot爆誕！",
+        "catchphrase": "コーヒー一杯分の時間で、プロダクション品質のコードを。",
+        "wow_factor": "Claudeの生成コードを、テストと自動化された品質チェックによって、まるで熟練エンジニアが書いたかのように洗練させる点が革新的です。",
+        "dev_utility": 9,
+        "category": [
+          "Automation",
+          "DevTools",
+          "Utility",
+          "API"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "複雑なデータ変換処理をClaudeに依頼し、自動生成されたコードをテストを通して品質を保証する。",
+          "APIクライアントの自動生成とテストをPilotに任せ、バックエンド連携を迅速化する。",
+          "既存のコードベースに対するリファクタリング案をClaudeに生成させ、Pilotでテストし安全に適用する。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:42:35.539Z"
+    },
+    {
+      "name": "doobidoo/mcp-memory-service",
+      "stars": 1351,
+      "description": "Open-source persistent memory for AI agent pipelines (LangGraph, CrewAI, AutoGen) and Claude. REST API + knowledge graph + autonomous consolidation.",
+      "url": "https://github.com/doobidoo/mcp-memory-service",
+      "updated_at": "2026-02-20T07:08:17Z",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "analysis": {
+        "summary_ja": "AIエージェントの記憶問題を解決！LangGraph、CrewAI、AutoGen、Claudeに対応した永続メモリサービス。REST API、知識グラフ、自律的な統合機能で、あなたのAI開発を加速します。",
+        "catchphrase": "AIエージェントに、忘れられない記憶を。",
+        "wow_factor": "AIエージェントのパイプラインにおける知識の永続化、グラフ構造化、自律的な統合をオープンソースで実現し、長期的な推論能力を飛躍的に向上させます。",
+        "dev_utility": 8,
+        "category": [
+          "Database",
+          "API",
+          "Automation",
+          "DevTools"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "複数のAIエージェントが協調してタスクを実行する際、各エージェントの知識と経験を共有し、全体としてのパフォーマンスを向上させる。",
+          "過去の対話履歴や学習データを知識グラフとして構造化し、AIエージェントがより文脈に沿った自然な応答を生成できるようにする。",
+          "AIエージェントが収集した情報を自動的に整理・統合し、常に最新かつ正確な知識に基づいて行動できるようにする。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:42:40.146Z"
+    },
+    {
+      "name": "CoderGamester/mcp-unity",
+      "stars": 1337,
+      "description": "Model Context Protocol (MCP) plugin to connect with Unity Editor — designed for Cursor, Claude Code, Codex, Windsurf and other IDEs",
+      "url": "https://github.com/CoderGamester/mcp-unity",
+      "updated_at": "2026-02-20T03:39:09Z",
+      "language": "C#",
+      "license": "MIT",
+      "analysis": {
+        "summary_ja": "Unityエディタと最先端IDE（Cursor, Claude Code, Codex等）を繋ぐMCPプラグイン！コード生成AIと連携し、爆速ゲーム開発を実現。プログラミングはもっとクリエイティブになる！",
+        "catchphrase": "未来型ゲーム開発、扉を開け。",
+        "wow_factor": "AIアシスタントとのシームレスな連携により、Unityエディタ内でのコーディング、デバッグ、テストが劇的に効率化され、まるでAIが相棒になったかのような体験を提供します。",
+        "dev_utility": 9,
+        "category": [
+          "API",
+          "Utility",
+          "Automation",
+          "DevTools"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "Cursor等のAIエディタで生成したコードを、Unityエディタにリアルタイムに反映し、即座に動作確認。",
+          "Claude CodeのようなAIモデルにUnityのスクリプトに関する質問をし、エディタ内で回答を確認しながらコーディング。",
+          "Codexを活用し、ゲームの複雑なロジックを自動生成し、開発時間を大幅に短縮。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:42:44.568Z"
+    },
+    {
+      "name": "evilsocket/nerve",
+      "stars": 1320,
+      "description": "The Simple Agent Development Kit.",
+      "url": "https://github.com/evilsocket/nerve",
+      "updated_at": "2026-02-19T15:53:06Z",
+      "language": "Python",
+      "license": "NOASSERTION",
+      "analysis": {
+        "summary_ja": "Agent開発、もう迷わない！Nerveは、シンプルさを追求したAgent開発キット。イベント駆動アーキテクチャで、自律分散システム構築を加速。カスタムAgentを爆速開発し、未来を切り開け！",
+        "catchphrase": "自律分散の未来を、あなたの手で。",
+        "wow_factor": "gRPCストリーミングを用いた双方向通信を容易に実現し、リアルタイムデータ処理とAgent間連携を極限まで効率化します。",
+        "dev_utility": 8,
+        "category": [
+          "Utility",
+          "Automation",
+          "DevTools",
+          "Communication",
+          "API"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "IoTデバイスからデータを収集し、異常値を検知する自律型監視Agentを構築する。",
+          "分散型システムで、サービス間の連携を自動化するワークフローAgentを開発する。",
+          "機械学習モデルをエッジにデプロイし、リアルタイムで推論を行う推論Agentを実装する。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:42:49.260Z"
+    },
+    {
+      "name": "universal-tool-calling-protocol/code-mode",
+      "stars": 1317,
+      "description": "🔌 Plug-and-play library to enable agents to call MCP and UTCP tools via code execution. ",
+      "url": "https://github.com/universal-tool-calling-protocol/code-mode",
+      "updated_at": "2026-02-19T21:48:08Z",
+      "language": "Python",
+      "license": "MPL-2.0",
+      "analysis": {
+        "summary_ja": "エージェントにコード実行能力を！MCP/UTCPツールをプラグ＆プレイで呼び出し、自律的な問題解決を加速。独自ツール連携も容易で、AI開発の可能性を広げます。",
+        "catchphrase": "AIエージェントに、無限の力を。",
+        "wow_factor": "コード実行環境を抽象化し、異なるMCP/UTCPツールをシームレスに連携させることで、エージェントの汎用性と適応力を飛躍的に向上させます。",
+        "dev_utility": 8,
+        "category": [
+          "API",
+          "Utility",
+          "Automation",
+          "DevTools"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "複雑なデータ分析タスクを、エージェントが自律的にツールを組み合わせて実行",
+          "特定のドメイン知識を持つカスタムツールをMCP/UTCPエコシステムに統合し、専門的なタスクを自動化",
+          "複数APIを連携させたワークフローを、コード実行を通じて動的に生成・実行"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:42:53.970Z"
+    },
+    {
+      "name": "zinja-coder/jadx-ai-mcp",
+      "stars": 1269,
+      "description": "Plugin for JADX to integrate MCP server",
+      "url": "https://github.com/zinja-coder/jadx-ai-mcp",
+      "updated_at": "2026-02-20T07:43:05Z",
+      "language": "Java",
+      "license": "Apache-2.0",
+      "analysis": {
+        "summary_ja": "JADXにAIの力を！zinja-coder/jadx-ai-mcpは、リバースエンジニアリングを劇的に進化させるJADXプラグイン。MCPサーバー連携でコード解析を加速、未知のバイナリも怖くない！",
+        "catchphrase": "JADXよ、AIをまとい、深淵を覗け！",
+        "wow_factor": "MCPサーバーとの連携により、JADX単体では困難だった複雑なコードの解析や脆弱性発見が、AIの推論能力によって飛躍的に向上する可能性があります。",
+        "dev_utility": 8,
+        "category": [
+          "API",
+          "Utility",
+          "DevTools",
+          "Automation"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "マルウェア解析: 難読化されたコードの挙動をAIが解析し、悪意のある機能を特定。",
+          "脆弱性診断: 既知の脆弱性パターンをAIが検出し、潜在的なセキュリティリスクを早期発見。",
+          "コード理解の加速: 大規模なコードベースの理解を助け、開発者がより迅速にプロジェクトに貢献できるようにする。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:42:58.887Z"
+    },
+    {
+      "name": "grafbase/grafbase",
+      "stars": 1208,
+      "description": "The Grafbase GraphQL Federation Gateway",
+      "url": "https://github.com/grafbase/grafbase",
+      "updated_at": "2026-02-18T18:10:55Z",
+      "language": "Rust",
+      "license": "MPL-2.0",
+      "analysis": {
+        "summary_ja": "GrafbaseはGraphQLフェデレーションを爆速で実現する革新的ゲートウェイ！複数GraphQL APIを統合、パフォーマンスもセキュリティも向上。サーバーレス環境にも最適。",
+        "catchphrase": "GraphQLフェデレーション、ついに来た『本命』。",
+        "wow_factor": "スキーマの自動合成と分散トレーシングにより、複雑なGraphQL APIをまるで一枚岩のように扱える魔法のような体験を提供。",
+        "dev_utility": 8,
+        "category": [
+          "API",
+          "Utility",
+          "DevTools"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "複数のマイクロサービスが公開するGraphQL APIを、単一のエンドポイントとして統合し、クライアント開発を簡素化する。",
+          "GraphQL APIのパフォーマンスボトルネックを特定し、クエリの最適化やキャッシュ戦略の改善に役立てる。",
+          "企業全体のGraphQLスキーマを効率的に管理し、APIのガバナンスとセキュリティを強化する。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:43:03.393Z"
+    },
+    {
+      "name": "designcomputer/mysql_mcp_server",
+      "stars": 1133,
+      "description": "A Model Context Protocol (MCP) server that enables secure interaction with MySQL databases",
+      "url": "https://github.com/designcomputer/mysql_mcp_server",
+      "updated_at": "2026-02-19T16:48:38Z",
+      "language": "Python",
+      "license": "MIT",
+      "analysis": {
+        "summary_ja": "MySQLデータベースとのセキュアな連携を可能にする革新的MCPサーバー！認可されたモデルコンテキストでのみアクセスを許可。データ保護と開発効率を両立。",
+        "catchphrase": "データベースアクセス、もっとスマートに。",
+        "wow_factor": "データベースへのアクセス制御をモデルコンテキストという概念で実現し、セキュリティレイヤーを劇的に向上させる点が斬新。",
+        "dev_utility": 8,
+        "category": [
+          "Database",
+          "API",
+          "Utility",
+          "DevTools",
+          "Automation"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "特定の顧客セグメントのデータだけを、マーケティング担当者向けのダッシュボードに表示する。",
+          "API経由でアプリケーションからデータベースへのアクセスを、必要なデータと操作に限定する。",
+          "AIモデルが学習に必要なデータのみをセキュアに取得し、本番データベースへの不正な書き込みを防ぐ。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:43:08.145Z"
+    },
+    {
+      "name": "AI-QL/tuui",
+      "stars": 1126,
+      "description": "A desktop MCP client designed as a tool unitary utility integration, accelerating AI adoption through the Model Context Protocol (MCP) and enabling cross-vendor LLM API orchestration.",
+      "url": "https://github.com/AI-QL/tuui",
+      "updated_at": "2026-02-17T16:01:01Z",
+      "language": "TypeScript",
+      "license": "Apache-2.0",
+      "analysis": {
+        "summary_ja": "次世代AI開発を加速！tuuiは、Model Context Protocol (MCP) を活用した革新的なデスクトップクライアント。ベンダーの垣根を超えたLLM APIオーケストレーションで、AIの可能性を最大限に引き出します。",
+        "catchphrase": "AI開発の未来を、あなたのデスクトップに。",
+        "wow_factor": "異なるLLM APIを統一的に扱えるMCPの可能性を、GUIで手軽に体験できる点が斬新。",
+        "dev_utility": 8,
+        "category": [
+          "API",
+          "Utility",
+          "Automation",
+          "DevTools"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "異なるベンダーのLLMを組み合わせて、最適なAIパイプラインを構築",
+          "MCP対応モデルのコンテキスト情報をGUIで可視化し、デバッグ効率を向上",
+          "自社開発のLLMを既存のAPIエコシステムに統合し、スムーズな連携を実現"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:43:12.507Z"
+    },
+    {
+      "name": "dmayboroda/minima",
+      "stars": 1037,
+      "description": "On-premises conversational RAG with configurable containers",
+      "url": "https://github.com/dmayboroda/minima",
+      "updated_at": "2026-02-11T04:09:33Z",
+      "language": "Python",
+      "license": "MPL-2.0",
+      "analysis": {
+        "summary_ja": "オンプレミスで動く会話型RAG！コンテナで柔軟に構成可能。社内データもセキュアに活用し、AIチャットボットを自由自在に構築。データ秘匿性を重視する開発者に最適！",
+        "catchphrase": "情報爆発を乗りこなせ！あなたのデータにAI知性を。",
+        "wow_factor": "独自のRAGパイプラインをローカル環境で構築し、外部APIへの依存を最小限に抑えつつ、最先端のAIチャットボットを迅速にデプロイできる点。",
+        "dev_utility": 8,
+        "category": [
+          "Search",
+          "API",
+          "Utility",
+          "DevTools"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "社内ドキュメント検索AIチャットボットの構築: 営業資料、技術ドキュメント、FAQなどを学習させ、問い合わせ対応を効率化。",
+          "オンプレミス環境での機密情報に関するAIアシスタント開発: 法務関連文書や財務データなど、外部に公開できない情報に基づいたAIアシスタントを構築。",
+          "特定のデータベースに特化した質問応答システムの構築: 製品仕様書やログデータなどを学習させ、技術サポートの自動化を実現。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:43:17.423Z"
+    },
+    {
+      "name": "IvanMurzak/Unity-MCP",
+      "stars": 1026,
+      "description": "AI-powered bridge connecting LLMs and advanced AI agents to the Unity Editor via the Model Context Protocol (MCP). Chat with AI to generate code, debug errors, and automate game development tasks directly within your project.",
+      "url": "https://github.com/IvanMurzak/Unity-MCP",
+      "updated_at": "2026-02-20T02:30:50Z",
+      "language": "C#",
+      "license": "Apache-2.0",
+      "analysis": {
+        "summary_ja": "Unity開発革命！AIと直接対話してコード生成、バグ修正、タスク自動化を実現。Model Context Protocol (MCP) でLLMとUnity Editorを繋ぎ、開発を加速させよう🚀",
+        "catchphrase": "Unity開発にAIを召喚！",
+        "wow_factor": "プロジェクト内でAIエージェントがコンテキストを理解し、インタラクティブにコード生成やデバッグを支援することで、従来のスクリプトベースの開発パラダイムを大きく変革する可能性を秘めています。",
+        "dev_utility": 8,
+        "category": [
+          "API",
+          "Utility",
+          "Automation",
+          "DevTools",
+          "Communication"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "AIに指示してキャラクターアニメーションのスクリプトを自動生成。",
+          "発生したエラーをAIに説明させ、修正コードを提案してもらう。",
+          "ゲームのレベルデザインに関する質問をAIに行い、リアルタイムでアイデアを検証する。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:43:21.927Z"
+    },
+    {
+      "name": "gyoridavid/short-video-maker",
+      "stars": 969,
+      "description": "Creates short videos for TikTok, Instagram Reels, and YouTube Shorts using the Model Context Protocol (MCP) and a REST API.",
+      "url": "https://github.com/gyoridavid/short-video-maker",
+      "updated_at": "2026-02-19T13:53:32Z",
+      "language": "TypeScript",
+      "license": "MIT",
+      "analysis": {
+        "summary_ja": "TikTok、Instagram Reels、YouTube Shorts動画を自動生成！ Model Context Protocol(MCP)とREST API連携で、クリエイティブな作業を効率化。アイデアを形にする高速プロトタイピングに最適。",
+        "catchphrase": "バズ動画量産マシーン、起動。",
+        "wow_factor": "Model Context Protocolを活用し、動画生成プロセスをAPI経由で自動化することで、コンテンツ生成ワークフローに革新をもたらす。",
+        "dev_utility": 8,
+        "category": [
+          "API",
+          "Utility",
+          "Automation"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "商品紹介動画を自動生成し、各SNSプラットフォームに最適化して投稿する",
+          "イベント告知動画をテキスト情報から自動生成し、短時間で拡散する",
+          "データ可視化に基づいたショート動画を定期的に自動生成し、情報発信する"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:43:26.330Z"
+    },
+    {
+      "name": "kimsungwhee/apple-docs-mcp",
+      "stars": 912,
+      "description": "MCP server for Apple Developer Documentation - Search iOS/macOS/SwiftUI/UIKit docs, WWDC videos, Swift/Objective-C APIs & code examples in Claude, Cursor & AI assistants",
+      "url": "https://github.com/kimsungwhee/apple-docs-mcp",
+      "updated_at": "2026-02-19T22:09:49Z",
+      "language": "TypeScript",
+      "license": "MIT",
+      "analysis": {
+        "summary_ja": "Claude, Cursor, 各種AIアシスタントでApple公式ドキュメントを超高速検索！iOS/macOS/SwiftUI/UIKit、WWDC動画、API、サンプルコードも一括アクセス。開発効率爆上げ必至！",
+        "catchphrase": "AIアシスタントがあなたの専属Appleドキュメントエキスパートに！",
+        "wow_factor": "Swift/Objective-C APIの即時検索とサンプルコードの提示を、AIアシスタント内で完結させることで、コンテキストスイッチの回数を劇的に削減します。",
+        "dev_utility": 9,
+        "category": [
+          "Search",
+          "API",
+          "Utility",
+          "Automation",
+          "DevTools",
+          "Communication"
+        ],
+        "safety_level": "Safe",
+        "use_cases": [
+          "Claudeに「Core Dataでデータを保存する方法を教えて」と質問し、サンプルコード付きの公式ドキュメントを即座に参照。",
+          "Cursorでコーディング中に「UIKitのUITableViewDataSourceプロトコルに関する情報が欲しい」と尋ね、関連APIドキュメントをポップアップ表示。",
+          "AIアシスタントに「WWDC2023のSwift Concurrencyに関するセッションを探して」と依頼し、関連動画とトランスクリプトを瞬時に取得。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:43:31.555Z"
+    },
+    {
+      "name": "SecretiveShell/MCP-Bridge",
+      "stars": 906,
+      "description": "A middleware to provide an openAI compatible endpoint that can call MCP tools",
+      "url": "https://github.com/SecretiveShell/MCP-Bridge",
+      "updated_at": "2026-02-20T05:20:45Z",
+      "language": "Python",
+      "license": "MIT",
+      "analysis": {
+        "summary_ja": "MCPツールをOpenAI互換APIとして呼び出せる！既存のAIツールとMCPをシームレスに連携。カスタムAIエージェント開発が加速！",
+        "catchphrase": "眠れるMCPツールをAIの力で覚醒させよ！",
+        "wow_factor": "OpenAI互換エンドポイントを通じて、これまで個別で扱っていたMCPツール群を、あたかも大規模言語モデルの一部のように扱える、その柔軟性が革新的です。",
+        "dev_utility": 8,
+        "category": [
+          "API",
+          "Utility",
+          "Automation",
+          "DevTools"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "自然言語でデータベースのクエリを生成し、実行するAIアシスタントを構築する。",
+          "既存のチャットボットに、特定のタスクをMCPツールで自動実行させる機能を追加する。",
+          "定型的なインフラ管理タスクを、AIが判断して自動化するシステムを構築する。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:43:36.060Z"
+    },
+    {
+      "name": "alioshr/memory-bank-mcp",
+      "stars": 863,
+      "description": "A Model Context Protocol (MCP) server implementation for remote memory bank management, inspired by Cline Memory Bank.",
+      "url": "https://github.com/alioshr/memory-bank-mcp",
+      "updated_at": "2026-02-19T22:36:11Z",
+      "language": "TypeScript",
+      "license": "MIT",
+      "analysis": {
+        "summary_ja": "Cline Memory Bankに触発された、リモートメモリバンク管理用MCPサーバー実装！モデルコンテキストを効率的に共有し、AI開発を加速させよう🚀",
+        "catchphrase": "AI開発の記憶力を拡張せよ！",
+        "wow_factor": "分散環境でもモデルコンテキストを一元管理し、メモリ効率とパフォーマンスを両立する革新的なアプローチ。",
+        "dev_utility": 8,
+        "category": [
+          "Database",
+          "API",
+          "Utility",
+          "DevTools"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "大規模言語モデルの推論時に、過去の対話履歴をコンテキストとして共有し、より自然な応答を生成する。",
+          "複数エージェントが連携してタスクを実行する際に、共通の知識ベースとして利用し、一貫性のある行動を実現する。",
+          "強化学習エージェントが経験した過去の試行錯誤のデータを保存し、学習効率を向上させる。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:43:40.769Z"
+    },
+    {
+      "name": "mcpjungle/MCPJungle",
+      "stars": 862,
+      "description": "Self-hosted MCP Gateway for AI agents",
+      "url": "https://github.com/mcpjungle/MCPJungle",
+      "updated_at": "2026-02-20T04:09:09Z",
+      "language": "Go",
+      "license": "MPL-2.0",
+      "analysis": {
+        "summary_ja": "AIエージェントを自在に操る！セルフホスト型MCPゲートウェイ、MCPJungle爆誕！分散したAIの知識を統合し、コンテキスト管理を効率化。自社環境で安心安全にAI活用を加速せよ！",
+        "catchphrase": "AIの知恵を、ジャングルからあなたの庭へ。",
+        "wow_factor": "分散したAIエージェント間のコンテキストを統合し、まるでAIが連携して一つのタスクをこなすような、高度な協調作業を可能にします。",
+        "dev_utility": 8,
+        "category": [
+          "API",
+          "Utility",
+          "Automation",
+          "DevTools",
+          "Communication"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "複数のAIモデルを連携させ、顧客からの複雑な問い合わせに対応する高度なチャットボットを構築",
+          "AIエージェント群を、特定の業界知識に特化させ、専門性の高い分析やレポート作成を自動化",
+          "社内ドキュメント、外部API、AIモデルを横断的に検索し、必要な情報を迅速に取得できるナレッジベースを構築"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:43:45.685Z"
+    },
+    {
+      "name": "zaidmukaddam/scira-mcp-chat",
+      "stars": 830,
+      "description": "A minimalistic MCP client with a good feature set.",
+      "url": "https://github.com/zaidmukaddam/scira-mcp-chat",
+      "updated_at": "2026-02-13T12:00:59Z",
+      "language": "TypeScript",
+      "license": "Apache-2.0",
+      "analysis": {
+        "summary_ja": "最小限のコードで最大限の力を！Scira MCP Chatは、洗練された機能でMCPクライアント開発を劇的に加速します。手軽にMCPの可能性を体験しよう！",
+        "catchphrase": "MCP開発、その退屈なセットアップは過去のもの。",
+        "wow_factor": "最小限のコードで、本格的なMCPクライアント機能を実装できる点が、開発者を驚かせるでしょう。",
+        "dev_utility": 8,
+        "category": [
+          "API",
+          "Utility",
+          "DevTools",
+          "Communication"
+        ],
+        "safety_level": "Safe",
+        "use_cases": [
+          "チャットボット開発におけるMCP連携のプロトタイピングを迅速化。",
+          "IoTデバイスからMCPサーバーへのデータ送信・受信を効率化。",
+          "既存のアプリケーションにMCP通信機能を簡単に追加。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:43:50.091Z"
+    },
+    {
+      "name": "alexander-zuev/supabase-mcp-server",
+      "stars": 813,
+      "description": "Query MCP enables end-to-end management of Supabase via chat interface: read & write query executions, management API support, automatic migration versioning, access to logs and much more.",
+      "url": "https://github.com/alexander-zuev/supabase-mcp-server",
+      "updated_at": "2026-02-17T01:53:10Z",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "analysis": {
+        "summary_ja": "Supabaseをチャットでフルコントロール！クエリ実行、API管理、自動マイグレーション、ログアクセス…まるで専属アシスタント。開発効率爆上げの予感！",
+        "catchphrase": "Supabase、チャットで操る新時代。",
+        "wow_factor": "まるでSF！自然言語でデータベース操作、API管理、インフラ制御まで一気通貫に実現する、まさに魔法のようなツールです。",
+        "dev_utility": 9,
+        "category": [
+          "Database",
+          "API",
+          "Automation",
+          "DevTools",
+          "Communication"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "SlackからSQLクエリを実行し、ユーザーデータを分析して、その結果をチームに共有する。",
+          "チャットでSupabaseの認証設定を変更し、新規ユーザーの登録フローを即座に最適化する。",
+          "アプリケーションログをリアルタイムで監視し、エラー発生時にアラートを受け取り、迅速な問題解決を行う。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:43:54.900Z"
+    },
+    {
+      "name": "ArcadeAI/arcade-mcp",
+      "stars": 811,
+      "description": "The best way to create, deploy, and share MCP Servers",
+      "url": "https://github.com/ArcadeAI/arcade-mcp",
+      "updated_at": "2026-02-19T15:53:02Z",
+      "language": "Python",
+      "license": "MIT",
+      "analysis": {
+        "summary_ja": "ArcadeAIのarcade-mcpは、MCPサーバーの構築、デプロイ、共有を劇的に簡素化！AI時代のデータ活用を加速させる、次世代型サーバー開発ツールキット。",
+        "catchphrase": "サーバー開発、再発明！",
+        "wow_factor": "設定ファイルを記述するだけで、複雑なMCPサーバーを瞬時にデプロイ可能にし、開発者はより創造的なタスクに集中できます。",
+        "dev_utility": 9,
+        "category": [
+          "API",
+          "Utility",
+          "Automation",
+          "DevTools"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "AIモデルのAPIエンドポイントを迅速に構築し、プロダクション環境にデプロイ。",
+          "社内データソースへの安全なアクセスを提供するMCPサーバーを自動生成。",
+          "チーム間で簡単に共有可能な、カスタマイズされたデータパイプラインを構築。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:43:59.508Z"
+    },
+    {
+      "name": "context-space/context-space",
+      "stars": 800,
+      "description": "Ultimate Context Engineering Infrastructure, starting from MCPs and Integrations",
+      "url": "https://github.com/context-space/context-space",
+      "updated_at": "2026-02-13T18:51:44Z",
+      "language": "Go",
+      "license": "AGPL-3.0",
+      "analysis": {
+        "summary_ja": "究極のコンテキストエンジニアリング基盤「Context Space」。MCPによる統合から始まる、未来のエンジニアリングを体験せよ！API連携、自動化、開発効率化に貢献。",
+        "catchphrase": "コンテキストを制する者が開発を制す！",
+        "wow_factor": "MCP (Model Context Protocol) を中心とした設計思想により、異なるシステム間のコンテキスト共有と統合を劇的に効率化し、今まで不可能だった連携を実現します。",
+        "dev_utility": 9,
+        "category": [
+          "API",
+          "Utility",
+          "Automation",
+          "DevTools",
+          "Communication"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "顧客サポート情報を開発環境に統合し、迅速な問題解決と再現を支援",
+          "IoTデバイスのセンサーデータを分析し、異常検知アラートを開発チームに自動通知",
+          "複数サービスのAPI連携を自動化し、新規機能開発のリードタイムを短縮"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:44:04.116Z"
+    },
+    {
+      "name": "vllora/vllora",
+      "stars": 780,
+      "description": "Debug your AI agents",
+      "url": "https://github.com/vllora/vllora",
+      "updated_at": "2026-02-20T00:33:07Z",
+      "language": "Rust",
+      "license": "NOASSERTION",
+      "analysis": {
+        "summary_ja": "AIエージェント開発の救世主現る！vlloraは、まるでAIの思考をデバッグするように、その挙動を詳細に分析・可視化。複雑なAIの挙動解明に革命を起こし、開発効率を劇的に向上させます。",
+        "catchphrase": "AIエージェントの「なぜ？」を解き明かせ！",
+        "wow_factor": "vlloraは、AIエージェントの内部状態をリアルタイムで可視化し、まるでAIのブレインダンプを見るかのような体験を提供します。",
+        "dev_utility": 9,
+        "category": [
+          "DevTools",
+          "Utility",
+          "Automation",
+          "API"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "複雑なタスクを実行するAIエージェントの判断ロジックをステップごとに解析し、エラーの原因を特定する。",
+          "AIエージェントの学習データに対する応答を可視化し、バイアスや不適切な学習データの影響を評価する。",
+          "複数のAIエージェントが連携するシステムのデバッグを行い、コミュニケーションエラーや競合を解決する。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:44:08.675Z"
+    },
+    {
+      "name": "massgen/MassGen",
+      "stars": 777,
+      "description": "🚀 MassGen is an open-source multi-agent scaling system that runs in your terminal, autonomously orchestrating frontier models and agents to collaborate, reason, and produce high-quality results. | Join us on Discord: discord.massgen.ai",
+      "url": "https://github.com/massgen/MassGen",
+      "updated_at": "2026-02-20T07:19:21Z",
+      "language": "Python",
+      "license": "NOASSERTION",
+      "analysis": {
+        "summary_ja": "MassGenは、あなたのターミナルで動くオープンソースのマルチエージェントシステム。最先端モデルとエージェントを自律的に連携させ、高品質な成果を爆速で生み出す！ Discordで情報交換しよう！",
+        "catchphrase": "あなたのターミナルが、AIチームの司令室に。",
+        "wow_factor": "複数の最先端モデルとエージェントを、ローカル環境で自律的に連携させ、複雑なタスクを解決できる驚異的なスケーリングシステムです。",
+        "dev_utility": 9,
+        "category": [
+          "Automation",
+          "DevTools",
+          "Utility",
+          "Communication",
+          "API"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "複雑なデータ分析タスクを、複数のエージェントが分担して実行し、効率的に結果をまとめる。",
+          "自動ドキュメント生成：複数のAIモデルが協力して、技術ドキュメントやAPIドキュメントを生成する。",
+          "高度なQAシステム：複数のエージェントが様々な角度から質問に答えることで、より正確で包括的な回答を提供する。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:44:13.332Z"
+    },
+    {
+      "name": "bgauryy/octocode-mcp",
+      "stars": 730,
+      "description": "MCP server for semantic code research and context generation on real-time using LLM patterns | Search naturally across public & private repos based on your permissions | Transform any accessible codebase/s into AI-optimized knowledge on simple and complex flows | Find real implementations and live docs from anywhere",
+      "url": "https://github.com/bgauryy/octocode-mcp",
+      "updated_at": "2026-02-19T16:27:41Z",
+      "language": "TypeScript",
+      "license": "MIT",
+      "analysis": {
+        "summary_ja": "LLMでコードをリアルタイム解析！パブリック/プライベートリポジトリ横断検索で、実装例やドキュメントを瞬時に発見。コードをAI最適化し、ナレッジ化も実現する次世代MCPサーバー。",
+        "catchphrase": "コードの海を泳ぎこなせ！",
+        "wow_factor": "リアルタイムなセマンティックコード解析とLLMパターン活用により、これまで不可能だったレベルでのコード理解と検索を実現します。",
+        "dev_utility": 8,
+        "category": [
+          "Search",
+          "API",
+          "Utility",
+          "Automation",
+          "DevTools"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "社内コードベース全体から、特定のAPIの実装例を検索し、ベストプラクティスを学ぶ。",
+          "OSSのリポジトリを横断検索し、特定のアルゴリズムの実装パターンを比較検討する。",
+          "既存コードをAIが分析し、自動でドキュメントを生成・更新することで、属人化された知識を共有する。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:44:17.942Z"
+    },
+    {
+      "name": "dadbodgeoff/drift",
+      "stars": 715,
+      "description": "Codebase intelligence for AI. Detects patterns & conventions + remembers decisions across sessions. MCP server for any IDE. Offline CLI.",
+      "url": "https://github.com/dadbodgeoff/drift",
+      "updated_at": "2026-02-19T00:05:57Z",
+      "language": "TypeScript",
+      "license": null,
+      "analysis": {
+        "summary_ja": "AI開発の秘密兵器！IDEにパターン認識＆決定記憶を付与し、まるで相棒エンジニア。オフラインCLIも完備。コード理解を劇的に加速するMCPサーバー。",
+        "catchphrase": "あなたのIDEに、AIの眼と記憶を。",
+        "wow_factor": "セッションを跨いでの決定記憶は、AIの学習と進化を開発現場でリアルタイムに体験させる可能性を秘めています。",
+        "dev_utility": 9,
+        "category": [
+          "AI",
+          "Utility",
+          "Automation",
+          "DevTools",
+          "API"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "チーム開発で、コーディング規約違反をリアルタイムに検出し、統一されたコード品質を維持する。",
+          "レガシーコードのリファクタリング時に、過去の設計判断をAIが提示し、一貫性のある改善を支援する。",
+          "新しいライブラリやフレームワークの学習時、サンプルコードやベストプラクティスをAIが提案し、迅速な理解を促進する。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:44:23.061Z"
+    },
+    {
+      "name": "adhikasp/mcp-client-cli",
+      "stars": 666,
+      "description": "A simple CLI to run LLM prompt and implement MCP client.",
+      "url": "https://github.com/adhikasp/mcp-client-cli",
+      "updated_at": "2026-02-19T10:45:26Z",
+      "language": "Python",
+      "license": "MIT",
+      "analysis": {
+        "summary_ja": "LLMプロンプト実行をCLIで爆速化！MCPクライアント実装で、AI連携アプリ開発が劇的に楽になる！テキスト生成AIを日常に。",
+        "catchphrase": "AI開発、その手軽さが限界突破。",
+        "wow_factor": "MCP (Model Context Protocol) クライアント実装をCLIで実現し、モデルとの連携を極限までシンプルに。",
+        "dev_utility": 8,
+        "category": [
+          "API",
+          "Utility",
+          "DevTools",
+          "Automation"
+        ],
+        "safety_level": "Safe",
+        "use_cases": [
+          "CLIからプロンプトを送り、ブログ記事のアイデアを瞬時に生成",
+          "テキスト生成AIを利用したチャットボットのプロトタイプを高速開発",
+          "自然言語で指示を出し、開発タスクを自動化するスクリプトを作成"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:44:27.362Z"
+    },
+    {
+      "name": "universal-tool-calling-protocol/python-utcp",
+      "stars": 636,
+      "description": "Official python implementation of UTCP. UTCP is an open standard that lets AI agents call any API directly, without extra middleware.",
+      "url": "https://github.com/universal-tool-calling-protocol/python-utcp",
+      "updated_at": "2026-02-17T16:29:31Z",
+      "language": "Python",
+      "license": "MPL-2.0",
+      "analysis": {
+        "summary_ja": "UTCPの公式Python実装！AIエージェントがAPIを直接呼び出せるオープン標準。ミドルウェア不要で、AI開発が爆速化！自作ツールをAIに簡単連携、未来が来た！",
+        "catchphrase": "AIエージェントよ、APIの海へ飛び込め！",
+        "wow_factor": "AIエージェントがAPIをダイレクトに扱えるため、複雑な連携処理や中間層の開発が不要になり、AIの可能性を最大限に引き出せる。",
+        "dev_utility": 9,
+        "category": [
+          "API",
+          "Utility",
+          "Automation",
+          "DevTools"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "AIが顧客データを分析し、CRMのAPIを直接叩いて最適なマーケティングキャンペーンを自動作成",
+          "AIアシスタントがリアルタイム株価情報を取得し、取引APIを通じてポートフォリオを最適化",
+          "AI搭載のスマートホームが、天気予報APIと連携してエアコンや照明を自動制御"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:44:31.766Z"
+    },
+    {
+      "name": "jacksteamdev/obsidian-mcp-tools",
+      "stars": 590,
+      "description": "Add Obsidian integrations like semantic search and custom Templater prompts to Claude or any MCP client.",
+      "url": "https://github.com/jacksteamdev/obsidian-mcp-tools",
+      "updated_at": "2026-02-19T20:02:00Z",
+      "language": "TypeScript",
+      "license": "MIT",
+      "analysis": {
+        "summary_ja": "ObsidianをClaudeやMCPクライアントと繋げ、セマンティック検索やカスタムTemplaterプロンプトを爆速実装！ナレッジベースをAIパワーで超強化するObsidian連携ツール。",
+        "catchphrase": "Obsidianの知能をClaudeに注入せよ！",
+        "wow_factor": "ローカルのObsidianナレッジグラフを、容易に大規模言語モデル(LLM)のコンテキストとして活用できる点が革新的。",
+        "dev_utility": 8,
+        "category": [
+          "Search",
+          "API",
+          "Utility",
+          "Automation",
+          "DevTools"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "Obsidianノートに基づいた、Claudeによる高度な質問応答ボット構築",
+          "Templaterで生成された議事録を元に、Claudeが自動でタスクリストを作成",
+          "Obsidian内のプロジェクトドキュメントを基に、Claudeがコードレビューや改善提案を実施"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:44:36.173Z"
+    },
+    {
+      "name": "rekog-labs/MCP-Nest",
+      "stars": 578,
+      "description": "A NestJS module to effortlessly create Model Context Protocol (MCP) servers for exposing AI tools, resources, and prompts.",
+      "url": "https://github.com/rekog-labs/MCP-Nest",
+      "updated_at": "2026-02-18T07:59:54Z",
+      "language": "TypeScript",
+      "license": "MIT",
+      "analysis": {
+        "summary_ja": "NestJSで爆速MCPサーバー構築！AIツール、リソース、プロンプトをスマートに公開🚀。Rekog Labs謹製モジュールで、AI開発ワークフローを劇的に改善しましょう。",
+        "catchphrase": "AI連携、秒速セットアップ！",
+        "wow_factor": "NestJSの力を借りて、複雑なAI連携を数行のコードで実現できる、まさに魔法のようなモジュールです。",
+        "dev_utility": 9,
+        "category": [
+          "API",
+          "Utility",
+          "DevTools"
+        ],
+        "safety_level": "Safe",
+        "use_cases": [
+          "自作の画像認識APIをMCPサーバーとして公開し、他のAIサービスと連携させる。",
+          "大規模言語モデル（LLM）のプロンプトエンジニアリング環境を構築し、チームで共有する。",
+          "既存のAIツールをMCPサーバー経由で統合し、AIパイプラインを自動化する。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:44:40.161Z"
+    },
+    {
+      "name": "spences10/mcp-sequentialthinking-tools",
+      "stars": 564,
+      "description": "🧠 An adaptation of the MCP Sequential Thinking Server to guide tool usage. This server provides recommendations for which MCP tools would be most effective at each stage.",
+      "url": "https://github.com/spences10/mcp-sequentialthinking-tools",
+      "updated_at": "2026-02-17T21:44:30Z",
+      "language": "TypeScript",
+      "license": "MIT",
+      "analysis": {
+        "summary_ja": "MCPツールを賢く使いこなせ！思考の流れに沿って最適なツールをレコメンドするサーバーが登場。AI開発の生産性爆上げ🚀、実験的な試みにも最適！",
+        "catchphrase": "AI開発、次のステージへ。ツール選択の迷いをゼロに。",
+        "wow_factor": "思考プロセスを模倣し、最適なMCPツールを動的に提案するシーケンシャルシンキング技術が、AI開発の新たな可能性を拓く。",
+        "dev_utility": 8,
+        "category": [
+          "API",
+          "Utility",
+          "Automation",
+          "DevTools"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "複雑なデータ分析タスクで、前処理→分析→可視化に最適なツールを順次提案し、ワークフローを自動化",
+          "自然言語処理パイプライン構築時に、テキストクリーニング→感情分析→要約といった各段階に適したツールを推奨",
+          "AIエージェント開発において、状況に応じて適切なAPI呼び出しを提案し、エージェントの自律性を向上"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:44:44.702Z"
+    },
+    {
+      "name": "cyproxio/mcp-for-security",
+      "stars": 550,
+      "description": "MCP for Security: A collection of Model Context Protocol servers for popular security tools like SQLMap, FFUF, NMAP, Masscan and more. Integrate security testing and penetration testing into AI workflows.",
+      "url": "https://github.com/cyproxio/mcp-for-security",
+      "updated_at": "2026-02-18T08:01:57Z",
+      "language": "TypeScript",
+      "license": "MIT",
+      "analysis": {
+        "summary_ja": "SQLMap、FFUF、NMAP…お馴染みセキュリティツールがAIと融合！MCPでペンテストを自動化し、脆弱性分析をインテリジェントに進化させよう。セキュリティエンジニア必見！",
+        "catchphrase": "セキュリティテストよ、AIと踊れ！",
+        "wow_factor": "脆弱性スキャン結果をAIが解釈し、自動で攻撃シナリオを生成・実行することで、これまで人手を介していたペンテストプロセスを劇的に効率化します。",
+        "dev_utility": 8,
+        "category": [
+          "API",
+          "Utility",
+          "Automation",
+          "DevTools"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "Nmapのスキャン結果をAIに解析させ、脆弱性のあるポートに対して適切な攻撃スクリプトを自動生成・実行する。",
+          "SQLMapで検出されたSQLインジェクション脆弱性を悪用し、AIがデータベースから機密情報を抽出する攻撃を自動化する。",
+          "FFUFで見つけた隠しディレクトリに対し、AIがその内容を分析し、さらなる攻撃対象を特定する。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:44:49.992Z"
+    },
+    {
+      "name": "TensorBlock/awesome-mcp-servers",
+      "stars": 549,
+      "description": "A comprehensive collection of Model Context Protocol (MCP) servers",
+      "url": "https://github.com/TensorBlock/awesome-mcp-servers",
+      "updated_at": "2026-02-19T17:13:46Z",
+      "language": null,
+      "license": "MIT",
+      "analysis": {
+        "summary_ja": "MCPサーバーの宝庫！モデルコンテキストを自在に操り、AI開発を加速させるリポジトリ。あなたのプロジェクトに最適なサーバーがきっと見つかる！",
+        "catchphrase": "AI開発の裏ワザ、ここに集結！",
+        "wow_factor": "様々なモデルコンテキストプロトコルサーバーを一挙に比較検討できるため、最適なアーキテクチャ選択を劇的に効率化します。",
+        "dev_utility": 9,
+        "category": [
+          "Database",
+          "Search",
+          "API",
+          "DevTools"
+        ],
+        "safety_level": "Safe",
+        "use_cases": [
+          "分散環境におけるモデルの共有と再利用を促進",
+          "異なるデータソースからの情報を統合し、モデルの精度を向上",
+          "大規模モデルの推論を効率化するための最適なサーバー構成を発見"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:44:54.293Z"
+    },
+    {
+      "name": "jonigl/mcp-client-for-ollama",
+      "stars": 541,
+      "description": "A text-based user interface (TUI) client for interacting with MCP servers using Ollama. Features include agent mode, multi-server, model switching, streaming responses, tool management, human-in-the-loop, thinking mode, model params config, MCP prompts, custom system prompt and saved preferences. Built for developers working with local LLMs.",
+      "url": "https://github.com/jonigl/mcp-client-for-ollama",
+      "updated_at": "2026-02-20T04:46:32Z",
+      "language": "Python",
+      "license": "MIT",
+      "analysis": {
+        "summary_ja": "Ollamaで動くローカルLLM開発者必見！MCPサーバーを操るTUIクライアント爆誕🚀エージェントモード、複数サーバー対応、ストリーミング応答…痒い所に手が届く機能満載！",
+        "catchphrase": "ローカルLLM開発、その壁をぶち破れ！",
+        "wow_factor": "Agent Mode, Multi-Server対応に加え、Human-in-the-Loopを実現することで、LLMの挙動をリアルタイムに観察・介入しながら開発できる点が画期的です。",
+        "dev_utility": 8,
+        "category": [
+          "Utility",
+          "DevTools",
+          "Communication",
+          "API"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "ローカルLLMのエージェント機能を開発し、複雑なタスクを実行させる。",
+          "複数のLLMをMCPサーバー経由で一元管理し、モデルの性能比較を行う。",
+          "Human-in-the-Loop機能を活用し、LLMの応答をリアルタイムで修正しながら、プロンプトエンジニアリングの効率を上げる。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:44:59.003Z"
+    },
+    {
+      "name": "mihaelamj/cupertino",
+      "stars": 529,
+      "description": "A local Apple Documentation crawler and MCP server. Written in Swift.",
+      "url": "https://github.com/mihaelamj/cupertino",
+      "updated_at": "2026-02-20T07:22:21Z",
+      "language": "Swift",
+      "license": "MIT",
+      "analysis": {
+        "summary_ja": "ローカルで爆速Appleドキュメント検索！Swift製MCPサーバー「cupertino」は、オフラインでも快適な開発環境を構築し、ドキュメントアクセスを劇的に効率化します。",
+        "catchphrase": "ドキュメント沼からの解放！",
+        "wow_factor": "Swiftで書かれたローカルクローラーが、Apple公式ドキュメントを高速かつオフラインで検索可能なMCPサーバーとして提供する点が画期的です。",
+        "dev_utility": 8,
+        "category": [
+          "Database",
+          "Search",
+          "API",
+          "Utility",
+          "DevTools"
+        ],
+        "safety_level": "Safe",
+        "use_cases": [
+          "オフライン環境でのiOS/macOSアプリ開発時に、必要なAPIドキュメントを即座に参照できる。",
+          "ネットワーク環境に左右されず、常に最新のAppleドキュメントにアクセスし、迅速な問題解決に役立てる。",
+          "チーム開発において、ドキュメントの参照時間を短縮し、開発スピードを向上させる。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:45:03.406Z"
+    },
+    {
+      "name": "SylphxAI/pdf-reader-mcp",
+      "stars": 508,
+      "description": "📄 Production-ready MCP server for PDF processing - 5-10x faster with parallel processing and 94%+ test coverage",
+      "url": "https://github.com/SylphxAI/pdf-reader-mcp",
+      "updated_at": "2026-02-20T01:12:29Z",
+      "language": "TypeScript",
+      "license": "MIT",
+      "analysis": {
+        "summary_ja": "PDF処理、もう遅いなんて言わせない！ SylphxAIの爆速MCPサーバーで5-10倍高速化。並列処理と94%以上のテストカバレッジで、プロダクション品質も保証！",
+        "catchphrase": "PDF処理のボトルネック、一気に解消！",
+        "wow_factor": "並列処理による圧倒的な速度向上と、高水準のテストカバレッジが、大規模システムへの組み込みを強力にサポートします。",
+        "dev_utility": 8,
+        "category": [
+          "API",
+          "Utility",
+          "Automation"
+        ],
+        "safety_level": "Safe",
+        "use_cases": [
+          "大量のPDFドキュメントからの情報抽出を高速化し、レポーティング業務を効率化。",
+          "PDF形式の請求書や領収書を自動解析し、会計システムへのデータ入力を自動化。",
+          "全文検索エンジンと連携し、PDFドキュメントを対象とした高速な検索機能を実現。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:45:07.810Z"
+    },
+    {
+      "name": "dbt-labs/dbt-mcp",
+      "stars": 493,
+      "description": "A MCP (Model Context Protocol) server for interacting with dbt.",
+      "url": "https://github.com/dbt-labs/dbt-mcp",
+      "updated_at": "2026-02-20T05:47:30Z",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "analysis": {
+        "summary_ja": "dbt使い必見！dbtのモデルコンテキストをAPIで操作できるMCPサーバー爆誕🚀。メタデータ活用を加速し、データ分析基盤の可能性を無限に広げます。dbtと連携して、データパイプラインの進化を体験せよ！",
+        "catchphrase": "dbtの可能性を解き放て！",
+        "wow_factor": "dbtモデルのメタデータを活用し、検索可能なAPIとして公開することで、今までアクセスできなかった情報にプログラムからアクセス可能にし、データ活用を劇的に効率化します。",
+        "dev_utility": 8,
+        "category": [
+          "Database",
+          "API",
+          "Utility",
+          "DevTools"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "dbtモデルの依存関係を可視化するカスタムツールを構築できる。",
+          "データ品質テストの結果をMCPサーバーに連携し、異常検知システムを構築できる。",
+          "dbtモデルのメタデータを活用して、データカタログを自動生成できる。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:45:12.317Z"
+    },
+    {
+      "name": "jasonjmcghee/claude-debugs-for-you",
+      "stars": 486,
+      "description": "Enable any LLM (e.g. Claude) to interactively debug any language for you via MCP and a VS Code Extension",
+      "url": "https://github.com/jasonjmcghee/claude-debugs-for-you",
+      "updated_at": "2026-02-18T13:27:33Z",
+      "language": "TypeScript",
+      "license": "MIT",
+      "analysis": {
+        "summary_ja": "夢のAIデバッガー爆誕！Claude等のLLMがMCP経由でVS Codeと連携、どんな言語のバグもインタラクティブに解決。開発効率爆上げの予感🚀",
+        "catchphrase": "バグよ、さらば！AIデバッグの夜明け。",
+        "wow_factor": "MCPを活用することで、LLMを汎用的なデバッギングエンジンとして統合し、VS Codeから直接、多様な言語のコードを理解・修正させることができる点。",
+        "dev_utility": 8,
+        "category": [
+          "DevTools",
+          "Automation",
+          "Utility",
+          "API"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "AIがコード内の潜在的なバグを特定し、修正案を提示してくれる",
+          "複雑なロジックのエラーをステップ実行しながら、AIに解説してもらうことで理解を深める",
+          "テストコードの自動生成や、既存テストの改善をAIに依頼することで、テスト品質を向上させる"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:45:17.232Z"
+    },
+    {
+      "name": "makafeli/n8n-workflow-builder",
+      "stars": 486,
+      "description": "AI assistant integration for n8n workflow automation through Model Context Protocol (MCP). Connect Claude Desktop, ChatGPT, and other AI assistants to n8n for natural language workflow management.",
+      "url": "https://github.com/makafeli/n8n-workflow-builder",
+      "updated_at": "2026-02-19T10:43:28Z",
+      "language": "JavaScript",
+      "license": "MIT",
+      "analysis": {
+        "summary_ja": "n8nにAIアシスタントを融合！ClaudeやChatGPTと連携し、自然言語でワークフローを構築・管理。MCPの可能性を広げる、次世代オートメーションツール。",
+        "catchphrase": "ワークフロー構築、AIに任せて爆速化！",
+        "wow_factor": "Model Context Protocol (MCP) を活用することで、AIアシスタントとの双方向コミュニケーションを通じて、動的なワークフロー構築を可能にしている点が革新的です。",
+        "dev_utility": 8,
+        "category": [
+          "API",
+          "Utility",
+          "Automation",
+          "DevTools",
+          "Communication"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "「毎週のレポート作成」：必要なデータをAIが自動で収集し、整形してレポートを生成。メールで関係者に配信。",
+          "「顧客からの問い合わせ対応」：内容をAIが解析し、適切なn8nワークフローを実行。顧客データベースの更新や、担当者への通知を自動化。",
+          "「異常検知と対応」：システムログをAIが監視し、異常を検知した場合、自動的にサーバー再起動や担当者へのアラート送信を実行。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:45:22.356Z"
+    },
+    {
+      "name": "PV-Bhat/vibe-check-mcp-server",
+      "stars": 470,
+      "description": "Vibe Check is a tool that provides mentor-like feedback to AI Agents, preventing tunnel-vision, over-engineering and reasoning lock-in for complex and long-horizon agent workflows. KISS your over-eager AI Agents goodbye! Effective for: Coding, Ambiguous Tasks, High-Risk tasks",
+      "url": "https://github.com/PV-Bhat/vibe-check-mcp-server",
+      "updated_at": "2026-02-20T02:24:03Z",
+      "language": "TypeScript",
+      "license": "MIT",
+      "analysis": {
+        "summary_ja": "AIエージェントの暴走を未然に防ぐ！まるでベテランメンターのように、AIの思考をチェックし、過剰な設計や視野狭窄を防止。複雑なタスクも安心して任せられる！",
+        "catchphrase": "AIエージェントのメンター爆誕！もう、AIの独走は怖くない。",
+        "wow_factor": "長期的な複雑タスクにおいて、AIエージェントの思考プロセスをリアルタイムに監視し、早期に問題点を検出・是正できる点が画期的。",
+        "dev_utility": 8,
+        "category": [
+          "API",
+          "Utility",
+          "Automation",
+          "DevTools"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "複雑なコーディングタスクにおけるAIの誤りを早期発見し、手戻りを削減",
+          "曖昧な指示に対するAIの解釈をメンターチェックし、期待通りの結果を得る",
+          "金融取引など、リスクの高いタスクにおけるAIの判断を監視し、損失を最小限に抑える"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:45:26.965Z"
+    },
+    {
+      "name": "Nexus-Router/nexus",
+      "stars": 463,
+      "description": "Govern & Secure your AI",
+      "url": "https://github.com/Nexus-Router/nexus",
+      "updated_at": "2026-02-19T15:53:56Z",
+      "language": "Rust",
+      "license": "MPL-2.0",
+      "analysis": {
+        "summary_ja": "AIを安全に統制する新時代のゲートキーパー！Nexusは、AIモデルへのアクセス制御とガバナンスを強化し、セキュアなAI活用を加速します。",
+        "catchphrase": "AIの野放し運用に終止符を！",
+        "wow_factor": "AIモデルのアクセス制御だけでなく、利用状況の監視・分析機能も備え、責任あるAI開発を支援します。",
+        "dev_utility": 8,
+        "category": [
+          "API",
+          "Utility",
+          "Automation",
+          "DevTools"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "機密データを扱うAIモデルへのアクセスを特定のユーザーグループに限定",
+          "AIモデルの利用状況を追跡し、不正利用やパフォーマンスボトルネックを特定",
+          "AIモデルのバージョン管理とロールバックを容易にし、安定したAIサービスを提供"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:45:31.568Z"
+    },
+    {
+      "name": "utensils/mcp-nixos",
+      "stars": 450,
+      "description": "MCP-NixOS - Model Context Protocol Server for NixOS resources",
+      "url": "https://github.com/utensils/mcp-nixos",
+      "updated_at": "2026-02-20T05:15:22Z",
+      "language": "Python",
+      "license": "MIT",
+      "analysis": {
+        "summary_ja": "NixOSリソースに特化したMCPサーバー！構成管理を劇的に効率化し、属人化排除も。宣言的なインフラ構築に革命を起こすかも？",
+        "catchphrase": "NixOSの未来を、コンテキストで語ろう。",
+        "wow_factor": "NixOS環境のあらゆるリソースをModel Context Protocolで抽象化し、集中管理・操作を可能にするアーキテクチャが斬新。",
+        "dev_utility": 8,
+        "category": [
+          "Utility",
+          "Automation",
+          "DevTools"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "NixOSで構築された複数サーバーの状態をMCPで一元管理し、コンテキストに基づいた自動デプロイを実現。",
+          "特定の設定ファイルを持つNixOSリソースを検索し、必要な設定変更をスクリプトから一括適用。",
+          "MCPサーバーを通じて、NixOS環境におけるリソースの依存関係を可視化し、問題発生時の迅速な原因特定に貢献。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:45:36.379Z"
+    },
+    {
+      "name": "ravitemer/mcp-hub",
+      "stars": 439,
+      "description": "A centralized manager for Model Context Protocol (MCP) servers with dynamic server management and monitoring",
+      "url": "https://github.com/ravitemer/mcp-hub",
+      "updated_at": "2026-02-19T17:01:01Z",
+      "language": "JavaScript",
+      "license": "MIT",
+      "analysis": {
+        "summary_ja": "MCPサーバーを一元管理！動的なサーバー運用と監視で、モデルコンテキストの連携が劇的に進化。もう設定地獄とはお別れ。AI開発を加速させよう！",
+        "catchphrase": "モデル連携、その最適解。",
+        "wow_factor": "MCPサーバーの動的管理とリアルタイム監視機能により、分散環境におけるモデルコンテキストの整合性と可用性を飛躍的に向上させます。",
+        "dev_utility": 8,
+        "category": [
+          "Utility",
+          "Automation",
+          "DevTools",
+          "API"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "複数の機械学習モデルを連携させたシステムの運用効率化。各モデルのコンテキストをMCPで管理し、動的なリクエストルーティングを実現。",
+          "分散環境におけるモデルのバージョン管理とA/Bテストの自動化。MCPを通じて、各モデルのコンテキストを切り替え、パフォーマンスを比較。",
+          "大規模言語モデル（LLM）のファインチューニングにおける実験管理。MCPで異なるパラメータ設定のモデルコンテキストを管理し、最適な設定を効率的に探索。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:45:41.602Z"
+    },
+    {
+      "name": "domdomegg/airtable-mcp-server",
+      "stars": 419,
+      "description": "🗂️🤖 Airtable Model Context Protocol Server, for allowing AI systems to interact with your Airtable bases",
+      "url": "https://github.com/domdomegg/airtable-mcp-server",
+      "updated_at": "2026-02-20T02:12:54Z",
+      "language": "TypeScript",
+      "license": "MIT",
+      "analysis": {
+        "summary_ja": "AirtableがAIと連携！データベースをModel Context Protocolで公開し、AIエージェントが自在に操作・活用。データ連携の未来を拓くサーバー爆誕！",
+        "catchphrase": "AirtableがAIの手に！データ連携、新次元へ。",
+        "wow_factor": "Airtableの構造をAIが理解できる形で公開し、自然言語での指示に基づいたデータ操作を可能にするModel Context Protocolを採用している点が革新的。",
+        "dev_utility": 8,
+        "category": [
+          "Database",
+          "API",
+          "Automation",
+          "DevTools"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "AIアシスタントに「今月の売上が一番高い商品は？」と尋ね、Airtableからリアルタイムで回答を得る。",
+          "AirtableのタスクリストをAIエージェントが自動で整理し、優先順位に基づいた実行プランを作成する。",
+          "顧客からの問い合わせ内容をAIが解析し、Airtableの顧客データベースと連携して最適な回答を生成する。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:45:46.445Z"
+    },
+    {
+      "name": "ghuntley/groundhog",
+      "stars": 393,
+      "description": "Groundhog's primary purpose is to teach people how Cursor and all these other coding agents work under the hood. If you understand how these coding assistants work from first principles, then you can drive these tools harder (or perhaps make your own!).",
+      "url": "https://github.com/ghuntley/groundhog",
+      "updated_at": "2026-02-09T15:55:37Z",
+      "language": "Rust",
+      "license": "AGPL-3.0",
+      "analysis": {
+        "summary_ja": "Groundhogは、CursorなどのAIコーディングアシスタントの裏側を解き明かす学習ツール。原理を理解すれば、既存ツールを最大限に活用、あるいは自作も可能に！",
+        "catchphrase": "AIコーディングアシスタントの「なぜ？」をHackしよう！",
+        "wow_factor": "AIコーディングアシスタントの内部動作を、実際に手を動かしながら理解できる、他に類を見ない実践的な学習アプローチ。",
+        "dev_utility": 7,
+        "category": [
+          "DevTools",
+          "Utility",
+          "Automation"
+        ],
+        "safety_level": "Safe",
+        "use_cases": [
+          "AIコーディングアシスタントのプロンプトエンジニアリングスキル向上",
+          "既存のAIコーディングアシスタントの弱点を把握し、より効率的な開発ワークフローを構築",
+          "AIコーディングアシスタントの原理を応用した独自の自動化ツール開発"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:46:00.445Z"
+    },
+    {
+      "name": "karanb192/reddit-mcp-buddy",
+      "stars": 380,
+      "description": "Clean, LLM-optimized Reddit MCP server. Browse posts, search content, analyze users. No fluff, just Reddit data.",
+      "url": "https://github.com/karanb192/reddit-mcp-buddy",
+      "updated_at": "2026-02-19T19:04:34Z",
+      "language": "TypeScript",
+      "license": "MIT",
+      "analysis": {
+        "summary_ja": "Redditデータ活用の救世主！LLMに最適化された超軽量MCPサーバーで、投稿検索、ユーザー分析が爆速化。無駄を削ぎ落とした設計が魅力。さあ、Redditの海へ飛び込もう！",
+        "catchphrase": "Redditデータを、あなたの指先に。",
+        "wow_factor": "LLMに最適化された設計により、大規模なRedditデータを効率的に処理し、これまで不可能だった高度な分析を可能にします。",
+        "dev_utility": 8,
+        "category": [
+          "Database",
+          "Search",
+          "API",
+          "Utility"
+        ],
+        "safety_level": "Safe",
+        "use_cases": [
+          "特定のトピックに関するRedditの議論トレンド分析",
+          "競合製品に関するユーザーの感情分析",
+          "Redditユーザーのペルソナ構築とターゲティング広告の最適化"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:46:05.052Z"
+    },
+    {
+      "name": "e2b-dev/mcp-server",
+      "stars": 379,
+      "description": "Giving Claude ability to run code with E2B via MCP (Model Context Protocol)",
+      "url": "https://github.com/e2b-dev/mcp-server",
+      "updated_at": "2026-02-16T05:14:45Z",
+      "language": "JavaScript",
+      "license": "Apache-2.0",
+      "analysis": {
+        "summary_ja": "ClaudeがE2B上でコード実行可能に！MCPサーバーで夢の連携が実現。AIと開発環境が融合し、創造性が爆発する！未来の開発を先取りしよう🚀",
+        "catchphrase": "Claude、ついにコードを操る！",
+        "wow_factor": "大規模言語モデルがリアルタイムにコードを実行し、その結果をフィードバックループに取り込むことで、AIによる問題解決能力が飛躍的に向上します。",
+        "dev_utility": 8,
+        "category": [
+          "API",
+          "Utility",
+          "Automation",
+          "DevTools"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "Claudeにデータ分析スクリプトを実行させ、その結果に基づいてレポートを自動生成。",
+          "ClaudeにWeb APIを叩かせ、得られた情報に基づいて動的にコンテンツを生成。",
+          "Claudeにコードをテスト実行させ、エラーを自動的に修正するプロトタイプを開発。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:46:09.456Z"
+    },
+    {
+      "name": "Agentfy-io/Agentfy",
+      "stars": 378,
+      "description": "🤖 Agentfy is a modular microservices architecture designed to process user requests and execute workflows across multiple social media platforms.  ASK ONCE, LET THE AGENT DO THE REST!",
+      "url": "https://github.com/Agentfy-io/Agentfy",
+      "updated_at": "2026-02-13T12:12:48Z",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "analysis": {
+        "summary_ja": "Agentfyは、モジュール型マイクロサービスアーキテクチャでSNS運用を劇的に効率化！一度指示すれば、あとはエージェントにお任せ。複数プラットフォームを跨ぐ複雑なワークフローも自動化します。",
+        "catchphrase": "「SNS運用、もう一人で悩まない。エージェントに丸投げ！」",
+        "wow_factor": "モジュール化されたマイクロサービスアーキテクチャにより、各SNSプラットフォームへの対応を柔軟に追加・拡張できる設計思想が秀逸です。",
+        "dev_utility": 8,
+        "category": [
+          "API",
+          "Automation",
+          "Communication",
+          "Utility"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "複数SNSでのキャンペーン投稿と効果測定の一括自動化",
+          "カスタマーサポート対応の自動化（FAQ応答、チケット作成など）",
+          "競合SNSアカウントの動向監視とレポート自動生成"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:46:14.135Z"
+    },
+    {
+      "name": "cyanheads/obsidian-mcp-server",
+      "stars": 374,
+      "description": "Obsidian Knowledge-Management MCP (Model Context Protocol) server that enables AI agents and development tools to interact with an Obsidian vault. It provides a comprehensive suite of tools for reading, writing, searching, and managing notes, tags, and frontmatter, acting as a bridge to the Obsidian Local REST API plugin.",
+      "url": "https://github.com/cyanheads/obsidian-mcp-server",
+      "updated_at": "2026-02-20T04:47:20Z",
+      "language": "TypeScript",
+      "license": "Apache-2.0",
+      "analysis": {
+        "summary_ja": "ObsidianをAIエージェントの知識ベースに！ノート、タグ、フロントマターを自在に操作し、ローカルREST APIと連携。AI開発が捗る、夢のツール登場！",
+        "catchphrase": "ObsidianがAIの頭脳に進化する！",
+        "wow_factor": "ObsidianのローカルREST APIをMCPで抽象化し、AIエージェントとの連携を劇的に簡略化する点が革新的です。",
+        "dev_utility": 9,
+        "category": [
+          "Database",
+          "Search",
+          "API",
+          "Utility",
+          "Automation",
+          "DevTools",
+          "Communication"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "AIがObsidian Vault内の情報を分析し、自動でレポートを生成。",
+          "AIアシスタントが、Obsidianのノートを元に、議事録を作成・整理。",
+          "開発ツールがObsidianのノート構造を理解し、コードドキュメントを自動生成。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:46:18.671Z"
+    },
+    {
+      "name": "graphlit/graphlit-mcp-server",
+      "stars": 373,
+      "description": "Model Context Protocol (MCP) Server for Graphlit Platform",
+      "url": "https://github.com/graphlit/graphlit-mcp-server",
+      "updated_at": "2026-02-13T12:00:56Z",
+      "language": "TypeScript",
+      "license": "MIT",
+      "analysis": {
+        "summary_ja": "Graphlit Platform の中核！モデルコンテキストを管理するMCPサーバーで、AI開発のボトルネックを解消。グラフデータとモデルを繋ぎ、新たな可能性を切り開け！",
+        "catchphrase": "AI開発、コンテキスト迷子にサヨナラ！",
+        "wow_factor": "グラフデータとモデルを結びつけ、推論や学習に必要なコンテキストを動的に提供することで、モデルの精度と開発効率を飛躍的に向上させます。",
+        "dev_utility": 8,
+        "category": [
+          "Database",
+          "API",
+          "DevTools",
+          "Automation"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "レコメンデーションエンジンの精度向上: ユーザーのグラフデータに基づいたリアルタイムなコンテキストをモデルに提供し、より関連性の高いレコメンドを実現。",
+          "不正検知システムの強化: グラフ構造内の異常パターンと関連データをMCPサーバーで分析し、不正行為を早期に発見。",
+          "自然言語処理の高度化: 知識グラフから得られるコンテキスト情報を活用し、質問応答やテキスト要約の精度を向上。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:46:23.484Z"
+    },
+    {
+      "name": "pab1it0/prometheus-mcp-server",
+      "stars": 369,
+      "description": "A Model Context Protocol (MCP) server that enables AI agents and LLMs to query and analyze Prometheus metrics through standardized interfaces.",
+      "url": "https://github.com/pab1it0/prometheus-mcp-server",
+      "updated_at": "2026-02-20T06:23:33Z",
+      "language": "Python",
+      "license": "MIT",
+      "analysis": {
+        "summary_ja": "PrometheusのデータをAIエージェントやLLMから標準化されたインターフェースで自在に分析！オブザーバビリティの未来を拓くMCPサーバー。これは試す価値あり！",
+        "catchphrase": "Prometheusのデータ、AIの手に！",
+        "wow_factor": "PrometheusのメトリクスをAIエージェントが直接解釈し、異常検知やリソース最適化を自動化できる点が革新的です。",
+        "dev_utility": 8,
+        "category": [
+          "Database",
+          "API",
+          "Automation",
+          "DevTools"
+        ],
+        "safety_level": "Safe",
+        "use_cases": [
+          "AIエージェントがPrometheusのメトリクスを分析し、CPU使用率の急上昇を検知して自動的にスケールアウト処理を実行。",
+          "LLMがPrometheusのデータに基づいて、システム全体のパフォーマンスに関するレポートを自然言語で生成。",
+          "チャットボットがPrometheusのデータをリアルタイムで分析し、ユーザーからの質問に答えて問題解決を支援。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:46:27.990Z"
+    },
+    {
+      "name": "afrise/MCPSharp",
+      "stars": 358,
+      "description": "MCPSharp is a .NET library that helps you build Model Context Protocol (MCP) servers and clients - the standardized API protocol used by AI assistants and models.",
+      "url": "https://github.com/afrise/MCPSharp",
+      "updated_at": "2026-02-16T12:25:54Z",
+      "language": "C#",
+      "license": "MIT",
+      "analysis": {
+        "summary_ja": ".NET開発者歓喜！AIアシスタントやモデルの標準API、MCPサーバー/クライアントを爆速構築できる神ライブラリ爆誕！AI連携アプリ開発の救世主となるか？",
+        "catchphrase": "AIモデル連携、その苦労に終止符を。",
+        "wow_factor": ".NET環境で、MCPという最先端のAIモデル連携プロトコルを、驚くほど簡単に実装できる点。",
+        "dev_utility": 8,
+        "category": [
+          "API",
+          "Utility",
+          "Automation",
+          "DevTools",
+          "Communication"
+        ],
+        "safety_level": "Safe",
+        "use_cases": [
+          "AIアシスタントと連携した、企業内ドキュメント検索システムを構築できる。",
+          "自然言語で指示できる、高度なデータ分析パイプラインを構築できる。",
+          "自社開発のAIモデルを、既存の.NETアプリケーションに容易に組み込める。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:46:32.748Z"
+    },
+    {
+      "name": "adhikasp/mcp-reddit",
+      "stars": 351,
+      "description": "A Model Context Protocol (MCP) server that provides tools for fetching and analyzing Reddit content.",
+      "url": "https://github.com/adhikasp/mcp-reddit",
+      "updated_at": "2026-02-15T19:36:54Z",
+      "language": "Python",
+      "license": "MIT",
+      "analysis": {
+        "summary_ja": "Redditデータ分析を楽々実現！MCPサーバーで、トレンド調査、感情分析、コミュニティ分析を自動化。高度な自然言語処理も手軽に試せる！",
+        "catchphrase": "Redditの深淵を覗き見ろ！",
+        "wow_factor": "Redditのコンテンツをリアルタイムに分析し、高度な自然言語処理モデルのコンテキストとして活用できる点が革新的です。",
+        "dev_utility": 8,
+        "category": [
+          "API",
+          "Utility",
+          "Automation",
+          "Communication",
+          "Search"
+        ],
+        "safety_level": "Safe",
+        "use_cases": [
+          "特定のキーワードに関するRedditのトレンドを自動的に追跡し、マーケティング戦略に活用。",
+          "Redditコミュニティの感情分析を行い、新製品に対する反応を把握。",
+          "Redditの議論から、技術的な課題やニーズを抽出し、開発の優先順位を決定。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:46:36.910Z"
+    },
+    {
+      "name": "jerhadf/linear-mcp-server",
+      "stars": 344,
+      "description": "A server that integrates Linear's project management system with the Model Context Protocol (MCP) to allow LLMs to interact with Linear.",
+      "url": "https://github.com/jerhadf/linear-mcp-server",
+      "updated_at": "2026-02-17T07:51:45Z",
+      "language": "JavaScript",
+      "license": "MIT",
+      "analysis": {
+        "summary_ja": "LinearとLLMが融合！プロジェクト管理をAIで自動化する革新的サーバー。タスク管理、進捗把握、リソース配分を劇的に効率化し、開発体験を向上させます。",
+        "catchphrase": "プロジェクト管理、AIに丸投げ？",
+        "wow_factor": "LinearのプロジェクトデータをLLMが直接理解し、自然言語でタスクの作成や進捗状況の確認が可能になる点が斬新です。",
+        "dev_utility": 8,
+        "category": [
+          "API",
+          "Utility",
+          "Automation",
+          "DevTools",
+          "Communication"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "「次のスプリントで最も重要なタスクは？」とLLMに尋ね、優先順位の高いタスクを自動でリストアップ。",
+          "「〇〇機能の開発状況は？」と問い合わせ、関連タスクの進捗状況、担当者、期日を瞬時に把握。",
+          "「〇〇のバグチケットを作成して、担当者を△△にアサインして」と指示し、チケット作成と担当者アサインを自動化。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:46:41.407Z"
+    },
+    {
+      "name": "vibheksoni/stealth-browser-mcp",
+      "stars": 335,
+      "description": "The only browser automation that bypasses anti-bot systems. AI writes network hooks, clones UIs pixel-perfect via simple chat.",
+      "url": "https://github.com/vibheksoni/stealth-browser-mcp",
+      "updated_at": "2026-02-19T18:43:54Z",
+      "language": "Python",
+      "license": "MIT",
+      "analysis": {
+        "summary_ja": "アンチボットを突破する次世代ブラウザ自動化！AIがネットワークフックを生成し、チャットでUIを完璧にクローン。自動化の未来を先取りしよう！",
+        "catchphrase": "その自動化、まるでスパイ。",
+        "wow_factor": "AIがネットワークフックを動的に生成し、複雑なアンチボットシステムを回避する技術は、まさに魔法のようです。",
+        "dev_utility": 9,
+        "category": [
+          "Automation",
+          "DevTools",
+          "API",
+          "Utility"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "競合サイトの価格情報をリアルタイムでスクレイピングし、自社サービスの価格戦略に反映。",
+          "SNSのトレンド情報を自動収集し、マーケティングキャンペーンの効果測定を最適化。",
+          "複雑なWebアプリケーションのE2Eテストを自動化し、品質保証プロセスを効率化。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:46:45.605Z"
+    },
+    {
+      "name": "argoproj-labs/mcp-for-argocd",
+      "stars": 328,
+      "description": "An implementation of Model Context Protocol (MCP) server for Argo CD.",
+      "url": "https://github.com/argoproj-labs/mcp-for-argocd",
+      "updated_at": "2026-02-18T16:31:41Z",
+      "language": "TypeScript",
+      "license": "Apache-2.0",
+      "analysis": {
+        "summary_ja": "Argo CDにModel Context Protocol（MCP）サーバーを実装！設定変更をリアルタイムに検知・反映し、GitOps環境の同期問題を解決。宣言的インフラの未来を加速させよう！",
+        "catchphrase": "GitOpsの「今」をアップデート！",
+        "wow_factor": "Argo CDの内部状態と外部システムの状態をMCPで統合的に管理することで、コンテキストに基づいた高度な自動化を可能にします。",
+        "dev_utility": 8,
+        "category": [
+          "Automation",
+          "DevTools",
+          "Utility"
+        ],
+        "safety_level": "Safe",
+        "use_cases": [
+          "CI/CDパイプラインで、アプリケーションのデプロイ状況をリアルタイムに監視し、自動的に次のステージへ移行する。",
+          "外部の構成管理システム（例：Vault）の設定変更を検知し、Argo CDを通じて即座にアプリケーションに反映する。",
+          "開発環境と本番環境の設定差異をMCPを通じて可視化し、設定ミスによるトラブルを未然に防ぐ。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:46:50.320Z"
+    },
+    {
+      "name": "apify/mcp-cli",
+      "stars": 320,
+      "description": "mcpc is a CLI client for MCP. It supports persistent sessions, stdio/HTTP, OAuth 2.1, JSON output for code mode, proxy for AI sandboxes, and much more.",
+      "url": "https://github.com/apify/mcp-cli",
+      "updated_at": "2026-02-18T14:09:02Z",
+      "language": "TypeScript",
+      "license": "Apache-2.0",
+      "analysis": {
+        "summary_ja": "AIサンドボックス向けの秘密兵器！ MCPのCLIクライアントmcpcは、永続セッション、OAuth 2.1、JSON出力、プロキシ機能満載。コードモード開発を爆速化🚀",
+        "catchphrase": "AI開発の裏ボス、現る。",
+        "wow_factor": "永続セッションとOAuth 2.1対応で、セキュアかつ効率的なAIサンドボックスとの連携を実現し、複雑な認証フローをCLIでシンプルに扱える点が革新的です。",
+        "dev_utility": 9,
+        "category": [
+          "API",
+          "Utility",
+          "Automation",
+          "DevTools"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "AIモデルのAPI呼び出しを自動化し、バッチ処理を効率化",
+          "ローカル環境からAIサンドボックスへのセキュアなプロキシ接続を確立し、開発環境を保護",
+          "AIモデルの評価結果をJSON形式で取得し、CI/CDパイプラインに統合"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:46:54.820Z"
+    },
+    {
+      "name": "elusznik/mcp-server-code-execution-mode",
+      "stars": 308,
+      "description": "An MCP server that executes Python code in isolated rootless containers with optional MCP server proxying. Implementation of Anthropic's and Cloudflare's ideas for reducing MCP tool definitions context bloat.",
+      "url": "https://github.com/elusznik/mcp-server-code-execution-mode",
+      "updated_at": "2026-02-17T02:45:06Z",
+      "language": "Python",
+      "license": "GPL-3.0",
+      "analysis": {
+        "summary_ja": "AnthropicとCloudflareのアイデアを実装！Pythonコードをrootlessコンテナで安全実行するMCPサーバー。API定義の肥大化を解消し、エージェント開発を加速。",
+        "catchphrase": "コンテキスト地獄からの解放！安全なコード実行環境で未来を創る。",
+        "wow_factor": "rootlessコンテナによる隔離環境でPythonコードを実行することで、セキュリティリスクを最小限に抑えつつ、柔軟なAPI連携を実現します。",
+        "dev_utility": 8,
+        "category": [
+          "API",
+          "Utility",
+          "Automation",
+          "DevTools"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "大規模言語モデル(LLM)のエージェントが、安全な環境下で外部APIと連携し、複雑なタスクを自動実行できる。",
+          "セキュリティ上の懸念から実行できなかったPythonスクリプトを、サンドボックス環境で安全に実行できる。",
+          "APIプロキシとして利用し、APIキーの漏洩リスクを低減しながら、様々なAPIを統合的に利用できる。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:46:59.530Z"
+    },
+    {
+      "name": "getdatanaut/openmcp",
+      "stars": 303,
+      "description": "Turn any openapi file into an mcp server, with just the tools you need.",
+      "url": "https://github.com/getdatanaut/openmcp",
+      "updated_at": "2026-02-05T10:19:40Z",
+      "language": "TypeScript",
+      "license": "MIT",
+      "analysis": {
+        "summary_ja": "OpenAPIファイルが即MCPサーバーに大変身！必要なツールだけを詰め込み、API開発を爆速化🚀。データ連携、マイクロサービス構築、APIテストが劇的に効率化！",
+        "catchphrase": "API開発、もう迷わない。OpenAPIから秒速サーバー構築！",
+        "wow_factor": "OpenAPI定義からMCPサーバーを自動生成することで、バックエンド開発にかかる時間と労力を大幅に削減し、フロントエンド開発者はAPIのモック環境構築から解放されます。",
+        "dev_utility": 9,
+        "category": [
+          "API",
+          "Utility",
+          "Automation",
+          "DevTools"
+        ],
+        "safety_level": "Safe",
+        "use_cases": [
+          "OpenAPI定義からモックサーバーを生成し、フロントエンド開発者がバックエンドの準備を待たずに開発を進める。",
+          "異なるシステム間で定義されたOpenAPIをMCPサーバーとして統合し、データ連携を容易にする。",
+          "APIの動作テスト環境を簡単に構築し、CI/CDパイプラインに組み込む。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:47:04.037Z"
+    },
+    {
+      "name": "DMontgomery40/deepseek-mcp-server",
+      "stars": 299,
+      "description": "Model Context Protocol server for DeepSeek's advanced language models",
+      "url": "https://github.com/DMontgomery40/deepseek-mcp-server",
+      "updated_at": "2026-02-09T22:04:45Z",
+      "language": "JavaScript",
+      "license": "MIT",
+      "analysis": {
+        "summary_ja": "DeepSeekの超高性能言語モデルをフル活用！文脈管理を劇的に効率化するMCPサーバーで、未来のAI開発を先取りしよう。API連携も簡単！",
+        "catchphrase": "文脈を操り、AIの可能性を解き放て！",
+        "wow_factor": "DeepSeekモデル専用に最適化されたModel Context Protocolを採用し、大規模な文脈データを効率的に扱えることで、より複雑なAIタスクの実現を可能にします。",
+        "dev_utility": 8,
+        "category": [
+          "API",
+          "Utility",
+          "DevTools",
+          "Communication"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "複雑な質問応答システム: 過去の会話履歴を考慮した、より人間らしい応答を生成",
+          "高度なチャットボット開発: 文脈を理解し、顧客のニーズに合わせた的確なサポートを実現",
+          "大規模なドキュメント解析: 文脈を維持しながら、大量のテキストデータを分析し、重要な情報を抽出"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:47:08.438Z"
+    },
+    {
+      "name": "adhikasp/mcp-git-ingest",
+      "stars": 298,
+      "description": "A Model Context Protocol (MCP) server that helps read GitHub repository structure and important files.",
+      "url": "https://github.com/adhikasp/mcp-git-ingest",
+      "updated_at": "2026-02-15T07:24:00Z",
+      "language": "Python",
+      "license": "MIT",
+      "analysis": {
+        "summary_ja": "GitHubリポジトリ構造と重要ファイルを解析！Model Context Protocol (MCP) サーバーで、AI開発の文脈理解を加速。リポジトリ知識を活かす次世代開発へ！",
+        "catchphrase": "リポジトリをAIのインテリジェンスへ。解き放て、コードのポテンシャル！",
+        "wow_factor": "ソースコードの構造と重要ファイルをMCPで標準化し、AIが理解可能な形式で提供することで、AIモデルの学習効率を飛躍的に向上させます。",
+        "dev_utility": 8,
+        "category": [
+          "API",
+          "Utility",
+          "Automation",
+          "DevTools"
+        ],
+        "safety_level": "Safe",
+        "use_cases": [
+          "AIによるコードレビューの自動化: リポジトリ全体を理解したAIが、高度なコードレビューを効率的に実行。",
+          "AIアシスタントによるコード補完の進化: コンテキストを考慮した、より適切なコード補完をAIアシスタントが提供。",
+          "リポジトリ知識を活用したAIチャットボットの構築: リポジトリに関する質問に、AIチャットボットが的確に回答。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:47:13.457Z"
+    },
+    {
+      "name": "cyberchitta/llm-context.py",
+      "stars": 294,
+      "description": "Share code with LLMs via Model Context Protocol or clipboard. Rule-based customization enables easy switching between different tasks (like code review and documentation). Includes smart code outlining.",
+      "url": "https://github.com/cyberchitta/llm-context.py",
+      "updated_at": "2026-02-18T14:39:06Z",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "analysis": {
+        "summary_ja": "LLMとの連携を爆速化！Model Context Protocolでコードを共有し、タスクに合わせて自動カスタマイズ。スマートなコードアウトライン機能も搭載。コードレビューやドキュメント作成が劇的に効率化！",
+        "catchphrase": "LLMのポテンシャルを解き放つ、コンテキスト共有の魔法。",
+        "wow_factor": "ルールベースのカスタマイズにより、コンテキストを動的に切り替え、LLMの役割を瞬時に変えられる点が革新的です。",
+        "dev_utility": 8,
+        "category": [
+          "API",
+          "Utility",
+          "Automation",
+          "DevTools"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "LLMにコードレビューを依頼し、改善点を瞬時に把握できる。",
+          "ドキュメントの自動生成や、コードの説明をLLMに任せられる。",
+          "特定の関数やクラスに関する質問をLLMに行い、詳細な情報を引き出せる。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:47:18.300Z"
+    },
+    {
+      "name": "wenb1n-dev/mysql_mcp_server_pro",
+      "stars": 292,
+      "description": "Model Context Protocol (MCP) server that supports secure interaction with MySQL databases and has anomaly analysis capabilities.更加牛逼！更加好用！不仅止于mysql的增删改查功能； 还包含了数据库异常分析能力；且便于开发者们进行个性化的工具扩展 ",
+      "url": "https://github.com/wenb1n-dev/mysql_mcp_server_pro",
+      "updated_at": "2026-02-03T06:46:30Z",
+      "language": "Python",
+      "license": "MIT",
+      "analysis": {
+        "summary_ja": "MySQLを安全に操り、異常も検知するMCPサーバー！単なるCRUDを超え、異常分析機能でDBを守り、カスタマイズ自在な拡張性で開発を加速。マジ卍！",
+        "catchphrase": "MySQL、その先に。",
+        "wow_factor": "MySQLとの安全なインタラクションに加え、データベースの異常分析機能を標準搭載し、セキュリティと効率性を両立させている点が革新的です。",
+        "dev_utility": 9,
+        "category": [
+          "Database",
+          "API",
+          "Utility",
+          "DevTools",
+          "Automation"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "データベースの不正アクセスやデータ改ざんの早期発見によるセキュリティ強化。",
+          "パフォーマンス低下の原因となるSQLクエリや設定ミスの自動検出による効率的な運用。",
+          "アプリケーションのデプロイパイプラインに組み込み、データベース変更による影響を事前に評価。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:47:22.664Z"
+    },
+    {
+      "name": "mzxrai/mcp-webresearch",
+      "stars": 292,
+      "description": "MCP web research server (give Claude real-time info from the web)",
+      "url": "https://github.com/mzxrai/mcp-webresearch",
+      "updated_at": "2026-02-09T22:06:48Z",
+      "language": "JavaScript",
+      "license": "MIT",
+      "analysis": {
+        "summary_ja": "Claudeにリアルタイムなウェブ情報という最強の武器を！検索結果を即座に連携、高度な情報分析を可能にするMCPサーバー。AI開発の可能性を爆上げしよう！",
+        "catchphrase": "Claude、今、最新の情報で思考せよ。",
+        "wow_factor": "検索エンジンと大規模言語モデルの連携を容易にし、リアルタイムなコンテキストに基づいた推論を可能にする点が革新的です。",
+        "dev_utility": 8,
+        "category": [
+          "Search",
+          "API",
+          "Automation",
+          "Communication"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "最新ニュースを基にClaudeに市場トレンド分析をさせ、投資戦略を立てる。",
+          "リアルタイムの競合製品情報をClaudeに提供し、自社製品の改善点を抽出する。",
+          "研究論文の最新情報をClaudeに検索させ、論文の要約と関連研究の提案を受け、研究を加速する。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:47:27.182Z"
+    },
+    {
+      "name": "zinja-coder/jadx-mcp-server",
+      "stars": 291,
+      "description": "MCP server for JADX-AI Plugin",
+      "url": "https://github.com/zinja-coder/jadx-mcp-server",
+      "updated_at": "2026-02-19T09:03:16Z",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "analysis": {
+        "summary_ja": "JADX-AIプラグイン専用MCPサーバー！リバースエンジニアリングが劇的に進化。AIを活用した解析をオフロードし、JADXのパフォーマンスを最大化。解析速度向上＆メモリ消費削減に貢献！",
+        "catchphrase": "JADXの限界を超える！AIリバースエンジニアリングを加速せよ。",
+        "wow_factor": "JADXプラグインと連携し、AIによる高度な解析を可能にすることで、今まで手動で行っていた煩雑な作業を自動化し、リバースエンジニアリングの効率を飛躍的に向上させます。",
+        "dev_utility": 9,
+        "category": [
+          "API",
+          "Utility",
+          "Automation",
+          "DevTools"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "JADX-AIプラグインから複雑な処理をオフロードし、JADXの応答性を向上させる。",
+          "大規模なバイナリ解析時に、サーバー側でリソースを効率的に利用し、JADXクライアントのメモリ不足を回避する。",
+          "複数のJADXユーザーが共有のリソース上でAI解析を実行できるように、リソースを効率的に管理する。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:47:31.879Z"
+    },
+    {
+      "name": "andrea9293/mcp-documentation-server",
+      "stars": 285,
+      "description": "MCP Documentation Server - Bridge the AI Knowledge Gap.  ✨ Features: Document management • Gemini integration • AI-powered semantic search • File uploads • Smart chunking • Multilingual support • Zero-setup  🎯 Perfect for: New frameworks • API docs • Internal guides ",
+      "url": "https://github.com/andrea9293/mcp-documentation-server",
+      "updated_at": "2026-02-13T18:55:45Z",
+      "language": "TypeScript",
+      "license": "MIT",
+      "analysis": {
+        "summary_ja": "AI知識のギャップを埋める！Gemini連携、セマンティック検索、スマートチャンキング等、AIドキュメント管理の全てをゼロ設定で。新フレームワーク、APIドキュメント、社内ガイドに最適！",
+        "catchphrase": "AIとドキュメント管理の未来が、ここに。",
+        "wow_factor": "Geminiのパワーをフル活用し、ドキュメントをAIが理解しやすく分割・整理することで、検索精度と利用効率を劇的に向上させる点。",
+        "dev_utility": 8,
+        "category": [
+          "Search",
+          "API",
+          "Utility",
+          "Automation",
+          "DevTools"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "新しく開発したフレームワークのドキュメントを自動生成し、Geminiを活用した高度な検索機能を提供することで、開発チーム全体の理解度を向上させる。",
+          "既存のAPIドキュメントをMCPにアップロードし、AIによるセマンティック検索を実装することで、必要な情報を迅速に見つけ出し、開発速度を加速させる。",
+          "社内ナレッジベースとして活用し、多言語対応とAIによる質問応答機能を提供することで、グローバルチーム間のコミュニケーションを円滑にする。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:47:36.804Z"
+    },
+    {
+      "name": "amxv/mcp-manager",
+      "stars": 280,
+      "description": "simple web ui to manage mcp (model context protocol) servers in the claude app",
+      "url": "https://github.com/amxv/mcp-manager",
+      "updated_at": "2026-02-19T16:32:53Z",
+      "language": "TypeScript",
+      "license": "MIT",
+      "analysis": {
+        "summary_ja": "Claudeアプリの裏側を覗き見！MCP (Model Context Protocol) サーバーをGUIで簡単管理。設定、監視、最適化が直感的に。AI開発を加速させる秘密兵器！",
+        "catchphrase": "Claudeの脳を、あなたの手で。",
+        "wow_factor": "Model Context Protocolという、普段はブラックボックスなサーバー群を、Web UIを通じて可視化・管理できる点に技術的な面白さがあります。",
+        "dev_utility": 7,
+        "category": [
+          "API",
+          "Utility",
+          "DevTools",
+          "Automation"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "Claudeアプリのプロンプトエンジニアリングにおける、コンテキストデータの検証と最適化。",
+          "複数MCPサーバーの負荷分散状況のモニタリングと、パフォーマンスチューニング。",
+          "MCPサーバーの設定変更をGUIから行い、迅速なデプロイとテストを実現。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:47:41.515Z"
+    },
+    {
+      "name": "kiliczsh/mcp-mongo-server",
+      "stars": 277,
+      "description": "A Model Context Protocol Server for MongoDB",
+      "url": "https://github.com/kiliczsh/mcp-mongo-server",
+      "updated_at": "2026-02-08T11:53:02Z",
+      "language": "TypeScript",
+      "license": "MIT",
+      "analysis": {
+        "summary_ja": "MongoDBに特化したModel Context Protocol (MCP) サーバー！モデルコンテキストを効率的に管理し、検索・連携を劇的に改善。AI連携も夢じゃない！",
+        "catchphrase": "MongoDBのデータ活用、次のステージへ。",
+        "wow_factor": "MongoDBのドキュメント構造を意識せず、自然言語による高度な検索や、AIモデルとの連携を可能にするコンテキスト管理を実現します。",
+        "dev_utility": 8,
+        "category": [
+          "Database",
+          "Search",
+          "API",
+          "Utility",
+          "DevTools"
+        ],
+        "safety_level": "Caution",
+        "use_cases": [
+          "顧客サポート: 過去の問い合わせ内容を自然言語で検索し、類似事例を迅速に発見。",
+          "製品開発: ユーザーレビューから製品改善点を抽出し、優先順位付けを自動化。",
+          "コンテンツレコメンデーション: ユーザーの閲覧履歴から、関連性の高い記事や商品を推薦。"
+        ]
+      },
+      "status": "draft",
+      "analyzed_at": "2026-02-20T08:47:45.815Z"
+    }
+  ]
+}

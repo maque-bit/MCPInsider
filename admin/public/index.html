@@ -237,28 +237,46 @@
         }
 
         async function runScript(type) {
-            showLog(`Running ${type} script...`);
-            try {
-                const res = await fetch(`/api/${type}`, { method: 'POST' });
-                const json = await res.json();
-                if (json.success) showLog(json.stdout || 'Success.');
-                else showLog(json.error || json.stderr, true);
-            } catch (e) {
-                showLog(e.message, true);
-            }
+            const logBox = document.getElementById('log-output');
+            logBox.classList.remove('hidden');
+            logBox.textContent = `Starting ${type}...\n`;
+            logBox.className = 'bg-gray-900 p-4 rounded-md h-64 overflow-y-auto text-sm text-gray-100 font-mono';
+
+            const eventSource = new EventSource(`/api/stream/${type}`);
+
+            eventSource.onmessage = (event) => {
+                const data = JSON.parse(event.data);
+                logBox.textContent += data;
+                logBox.scrollTop = logBox.scrollHeight;
+            };
+
+            eventSource.addEventListener('error', (event) => {
+                const data = JSON.parse(event.data);
+                const span = document.createElement('span');
+                span.className = 'text-red-400';
+                span.textContent = data;
+                logBox.appendChild(span);
+                logBox.scrollTop = logBox.scrollHeight;
+            });
+
+            eventSource.addEventListener('done', (event) => {
+                const data = JSON.parse(event.data);
+                logBox.textContent += `\n--- Finished with code ${data.code} ---\n`;
+                logBox.scrollTop = logBox.scrollHeight;
+                eventSource.close();
+            });
+
+            eventSource.onerror = (err) => {
+                console.group('SSE Error');
+                console.error(err);
+                console.groupEnd();
+                eventSource.close();
+            };
         }
 
         async function deployToGitHub() {
             if (!confirm("Are you sure you want to push current data to GitHub and trigger a live deployment?")) return;
-            showLog("Committing data and pushing to GitHub... This will trigger the GitHub Pages rebuild.");
-            try {
-                const res = await fetch(`/api/deploy`, { method: 'POST' });
-                const json = await res.json();
-                if (json.success) showLog(json.stdout + "\n\nDeploy triggered! It may take a few minutes for GitHub Pages to update.");
-                else showLog(json.error || json.stderr, true);
-            } catch (e) {
-                showLog(e.message, true);
-            }
+            runScript('deploy');
         }
 
         async function loadData() {

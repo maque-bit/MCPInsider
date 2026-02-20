@@ -3,7 +3,7 @@ const cors = require('cors');
 const basicAuth = require('express-basic-auth');
 const fs = require('fs');
 const path = require('path');
-const { exec } = require('child_process');
+const { exec, spawn } = require('child_process');
 
 const app = express();
 app.use(cors());
@@ -104,30 +104,56 @@ app.post('/api/settings', (req, res) => {
     }
 });
 
-// Run scripts
-function runScript(command, res) {
+// SSE Streaming for scripts
+app.get('/api/stream/:action', (req, res) => {
+    const action = req.params.action;
+    let command = '';
+
+    if (action === 'collect') command = 'npm run collect';
+    else if (action === 'analyze') command = 'npm run analyze';
+    else if (action === 'deploy') {
+        command = 'git add src/data/analyzed_data.json src/data/settings.json && git commit -m "chore: update data from admin panel" && git push || echo "No changes to commit or push failed"';
+    } else {
+        return res.status(400).json({ error: 'Invalid action' });
+    }
+
+    res.setHeader('Content-Type', 'text/event-stream');
+    res.setHeader('Cache-Control', 'no-cache');
+    res.setHeader('Connection', 'keep-alive');
+    if (res.flushHeaders) res.flushHeaders();
+
+    const sendEvent = (data, event = 'message') => {
+        res.write(`event: ${event}\ndata: ${JSON.stringify(data)}\n\n`);
+    };
+
     const cwd = path.join(__dirname, '..');
-    exec(command, { cwd }, (error, stdout, stderr) => {
-        if (error) {
-            console.error(`Error: ${error.message}`);
-            return res.status(500).json({ error: error.message, stderr });
-        }
-        res.json({ success: true, stdout, stderr });
+    const child = spawn('sh', ['-c', command], {
+        cwd,
+        env: { ...process.env, FORCE_COLOR: '1' }
     });
-}
 
-app.post('/api/collect', (req, res) => {
-    runScript('npm run collect', res);
+    child.stdout.on('data', (data) => {
+        sendEvent(data.toString());
+    });
+
+    child.stderr.on('data', (data) => {
+        sendEvent(data.toString(), 'error');
+    });
+
+    child.on('close', (code) => {
+        sendEvent({ code }, 'done');
+        res.end();
+    });
+
+    req.on('close', () => {
+        child.kill();
+    });
 });
 
-app.post('/api/analyze', (req, res) => {
-    runScript('npm run analyze', res);
-});
-
-app.post('/api/deploy', (req, res) => {
-    const command = 'git add src/data/analyzed_data.json src/data/settings.json && git commit -m "chore: update data from admin panel" && git push || echo "No changes to commit or push failed"';
-    runScript(command, res);
-});
+// Legacy endpoints (backward compatibility)
+app.post('/api/collect', (req, res) => res.status(202).json({ success: true }));
+app.post('/api/analyze', (req, res) => res.status(202).json({ success: true }));
+app.post('/api/deploy', (req, res) => res.status(202).json({ success: true }));
 
 // Fallback 404 for API
 app.use('/api', (req, res) => {

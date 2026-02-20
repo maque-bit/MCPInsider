@@ -3,23 +3,50 @@ const path = require('path');
 const { GoogleGenerativeAI } = require('@google/generative-ai');
 
 // GitHub Actions Secrets またはローカルの .env を読み込む
+// 本番環境（GitHub等）で既に環境変数が設定されている場合は .env 読み込みをスキップする
 if (!process.env.GEMINI_API_KEY) {
-    require('dotenv').config({ path: '../config/.env' });
+    const envPath = path.join(__dirname, '../config/.env');
+    if (fs.existsSync(envPath)) {
+        require('dotenv').config({ path: envPath });
+        console.log(`Loaded API Key from .env file at: ${envPath}`);
+    } else {
+        console.warn('GEMINI_API_KEY is not set and .env file was not found.');
+    }
+} else {
+    console.log('Using GEMINI_API_KEY from environment variables.');
 }
 
-const RAW_DATA_PATH = path.join(__dirname, '../data/raw_data.json');
-const ANALYZED_DATA_PATH = path.join(__dirname, '../data/analyzed_data.json');
-const SETTINGS_PATH = path.join(__dirname, '../data/settings.json');
-const LOG_FILE = path.join(__dirname, '../data/analyzer.log');
+const key = process.env.GEMINI_API_KEY || '';
+if (key) {
+    console.log(`API Key status: DETECTED (prefix: ${key.slice(0, 4)}...)`);
+} else {
+    console.error('API Key status: NOT FOUND');
+}
 
+const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || 'MISSING_KEY');
+
+// パス設定
+const DATA_DIR = path.join(__dirname, '../data');
+const RAW_DATA_PATH = path.join(DATA_DIR, 'raw_data.json');
+const ANALYZED_DATA_PATH = path.join(DATA_DIR, 'analyzed_data.json');
+const SETTINGS_PATH = path.join(__dirname, '../config/config.json');
+
+// ログ出力用関数
 function log(message) {
     const timestamp = new Date().toISOString();
-    const formattedMessage = `[${timestamp}] ${message}\n`;
-    console.log(message);
-    fs.appendFileSync(LOG_FILE, formattedMessage);
-}
+    const logMessage = `[${timestamp}] ${message}`;
+    console.log(logMessage);
 
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
+    // ログファイルにも保存
+    try {
+        if (!fs.existsSync(DATA_DIR)) {
+            fs.mkdirSync(DATA_DIR, { recursive: true });
+        }
+        fs.appendFileSync(path.join(DATA_DIR, 'analyzer.log'), logMessage + '\n');
+    } catch (e) {
+        // ログ書き込みエラーは無視
+    }
+}
 
 const SUPPORTED_MODELS = ["gemini-1.5-flash", "gemini-2.0-flash", "gemini-1.5-pro", "gemini-pro"];
 let currentModelIndex = 0;
