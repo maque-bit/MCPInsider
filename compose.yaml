@@ -1,0 +1,37 @@
+services:
+  admin:
+    build:
+      context: .
+      dockerfile: Containerfile
+      target: admin-dev
+    container_name: mcp-admin
+    volumes:
+      - .:/app:Z
+    environment:
+      - NODE_ENV=development
+    ports:
+      - "3000:3000"
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 2G
+
+  web:
+    build:
+      context: .
+      dockerfile: Containerfile
+      target: web-dev
+    container_name: mcp-web
+    volumes:
+      - ./web:/app/web:Z
+      - ./src/data:/app/src/data:Z  # To read analyzed_data.json
+    environment:
+      - NODE_ENV=development
+    ports:
+      - "4321:4321"
+    deploy:
+      resources:
+        limits:
+          cpus: '0.8'
+          memory: 1G

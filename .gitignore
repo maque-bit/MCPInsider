@@ -3,6 +3,11 @@
 !/.gitignore
 !/src/
 !/scripts/
+!/admin/
+!/web/
+!/Containerfile
+!/compose.yaml
+!/package.json
 
 # Explicitly ignore specific src contents if needed (redundant but safe)
 src/config/.env

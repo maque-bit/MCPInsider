@@ -1,0 +1,117 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import fs from 'node:fs';
+import path from 'node:path';
+
+// Read data
+const dataPath = path.resolve(process.cwd(), '../src/data/analyzed_data.json');
+let projects = [];
+try {
+  const raw = fs.readFileSync(dataPath, 'utf-8');
+  const parsed = JSON.parse(raw);
+  // Filter only published projects and optionally check settings for maintenance mode
+  projects = parsed.projects.filter((p: any) => p.status === 'published');
+} catch (e) {
+  console.error("Failed to read analyzed data:", e);
+}
+
+// Read settings to check maintenance mode
+const settingsPath = path.resolve(process.cwd(), '../src/data/settings.json');
+let maintenanceMode = false;
+try {
+  const raw = fs.readFileSync(settingsPath, 'utf-8');
+  const settings = JSON.parse(raw);
+  maintenanceMode = settings.maintenance_mode === true;
+} catch (e) {}
+
+---
+
+<Layout title="MCP Insider - 優れたサーバーを見つけよう">
+  {maintenanceMode ? (
+    <div class="text-center py-20">
+      <h1 class="text-4xl font-bold text-gray-800 mb-4">🔧 Maintenance Mode</h1>
+      <p class="text-gray-600">The site is currently undergoing an update. Please check back later.</p>
+    </div>
+  ) : (
+    <>
+      <section class="text-center mb-12 relative z-10 pt-8 sm:pt-12">
+        <h1 class="text-4xl font-extrabold text-gray-900 tracking-tight sm:text-5xl mb-4 leading-tight">
+          Discover the Best <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600">MCP Servers</span>
+        </h1>
+        <p class="text-[15px] sm:text-base text-gray-500 max-w-2xl mx-auto font-medium">
+          AIが分析・キュレーションした、開発者のための最高にワクワクするModel Context Protocolサーバーの一覧です。
+        </p>
+      </section>
+
+      <div class="flex justify-between items-center mb-6">
+        <h2 class="text-2xl font-bold text-gray-800 flex items-center gap-2">
+          Latest Analyzed Projects <span class="bg-blue-100 text-blue-800 text-sm py-1 px-3 rounded-full">{projects.length}</span>
+        </h2>
+        
+        <div class="flex items-center gap-2 bg-gray-100 p-1 rounded-lg">
+          <button id="btn-grid" class="view-toggle bg-white shadow-sm text-blue-600 p-2 rounded-md transition-all" aria-label="Grid View">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path></svg>
+          </button>
+          <button id="btn-list" class="view-toggle text-gray-500 hover:text-gray-800 p-2 rounded-md transition-all" aria-label="List View">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Grid View Container -->
+      <div id="grid-view" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {projects.map((p: any) => (
+          <ProjectCard project={p} viewMode="grid" />
+        ))}
+      </div>
+
+      <!-- List View Container (Hidden by default) -->
+      <div id="list-view" class="hidden flex-col gap-3">
+        {projects.map((p: any) => (
+          <ProjectCard project={p} viewMode="list" />
+        ))}
+      </div>
+      
+      {projects.length === 0 && (
+         <div class="text-center py-12 text-gray-500 bg-gray-50 rounded-lg border border-dashed border-gray-300">
+           No published projects available yet. Check the Admin Dashboard.
+         </div>
+      )}
+    </>
+  )}
+</Layout>
+
+<script>
+  // Simple client-side view toggle logic
+  const btnGrid = document.getElementById('btn-grid');
+  const btnList = document.getElementById('btn-list');
+  const gridView = document.getElementById('grid-view');
+  const listView = document.getElementById('list-view');
+
+  if (btnGrid && btnList && gridView && listView) {
+    btnGrid.addEventListener('click', () => {
+      btnGrid.classList.add('bg-white', 'shadow-sm', 'text-blue-600');
+      btnGrid.classList.remove('text-gray-500');
+      btnList.classList.remove('bg-white', 'shadow-sm', 'text-blue-600');
+      btnList.classList.add('text-gray-500');
+      
+      gridView.classList.remove('hidden');
+      gridView.classList.add('grid');
+      listView.classList.add('hidden');
+      listView.classList.remove('flex');
+    });
+
+    btnList.addEventListener('click', () => {
+      btnList.classList.add('bg-white', 'shadow-sm', 'text-blue-600');
+      btnList.classList.remove('text-gray-500');
+      btnGrid.classList.remove('bg-white', 'shadow-sm', 'text-blue-600');
+      btnGrid.classList.add('text-gray-500');
+      
+      listView.classList.remove('hidden');
+      listView.classList.add('flex');
+      gridView.classList.add('hidden');
+      gridView.classList.remove('grid');
+    });
+  }
+</script>

@@ -1,0 +1,11 @@
+{
+    "name": "mcp-insider",
+    "version": "1.0.0",
+    "description": "MCP Insider Root Project",
+    "scripts": {
+        "install:all": "npm install --prefix src/collector && npm install --prefix src/analyzer && npm install --prefix admin && npm install --prefix web",
+        "dev:admin": "npm run install:all && npm run dev --prefix admin",
+        "collect": "npm start --prefix src/collector",
+        "analyze": "npm start --prefix src/analyzer"
+    }
+}

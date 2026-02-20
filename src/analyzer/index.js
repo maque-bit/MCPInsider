@@ -9,6 +9,7 @@ if (!process.env.GEMINI_API_KEY) {
 
 const RAW_DATA_PATH = path.join(__dirname, '../data/raw_data.json');
 const ANALYZED_DATA_PATH = path.join(__dirname, '../data/analyzed_data.json');
+const SETTINGS_PATH = path.join(__dirname, '../data/settings.json');
 const LOG_FILE = path.join(__dirname, '../data/analyzer.log');
 
 function log(message) {
@@ -80,27 +81,60 @@ async function main() {
             ? JSON.parse(fs.readFileSync(ANALYZED_DATA_PATH, 'utf8'))
             : { projects: [] };
 
+        let settings = { auto_publish: false, retention_days: 30, maintenance_mode: false };
+        if (fs.existsSync(SETTINGS_PATH)) {
+            settings = JSON.parse(fs.readFileSync(SETTINGS_PATH, 'utf8'));
+        }
+
+        log(`Settings loaded: auto_publish=${settings.auto_publish}, retention_days=${settings.retention_days}`);
+
+        // Cleanup old data
+        const now = new Date();
+        let validProjects = existingData.projects.filter(p => {
+            if (!p.analyzed_at) return true;
+            const itemDate = new Date(p.analyzed_at);
+            const diffDays = (now - itemDate) / (1000 * 60 * 60 * 24);
+            return diffDays <= settings.retention_days;
+        });
+
+        // Filter out projects that are already analyzed correctly (optional: or re-analyze if needed)
+        // For now, we will re-analyze if they are in rawData, or just add new ones.
+        // Actually, let's just analyze ones that are in rawData. If they exist in validProjects, we might update them.
+        // To be safe, let's analyze all rawData, and overwrite existing or add new ones.
+
         log(`Analyzing ${rawData.repositories.length} repositories...`);
 
-        const analyzedProjects = [];
+        // Create a map of existing projects to preserve status if already published, etc.
+        const projectsMap = new Map();
+        for (const p of validProjects) {
+            projectsMap.set(p.url, p);
+        }
+
         // 並列実行だとレート制限にかかる可能性があるため、順次処理
         for (const repo of rawData.repositories) {
             log(`- Analyzing ${repo.name}...`);
             const analysis = await analyzeProject(repo);
             if (analysis) {
-                analyzedProjects.push({
+                const existing = projectsMap.get(repo.url);
+                const status = existing && existing.status === "published" ? "published" : (settings.auto_publish ? "published" : "draft");
+
+                projectsMap.set(repo.url, {
                     ...repo,
-                    analysis: analysis
+                    analysis: analysis,
+                    status: status,
+                    analyzed_at: new Date().toISOString()
                 });
             }
             // レート制限への配慮
             await new Promise(resolve => setTimeout(resolve, 2000));
         }
 
+        const finalProjects = Array.from(projectsMap.values());
+
         const finalResult = {
             last_updated: new Date().toISOString(),
-            total_count: analyzedProjects.length,
-            projects: analyzedProjects
+            total_count: finalProjects.length,
+            projects: finalProjects
         };
 
         fs.writeFileSync(ANALYZED_DATA_PATH, JSON.stringify(finalResult, null, 2));
