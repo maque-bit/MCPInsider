@@ -112,7 +112,7 @@ app.get('/api/stream/:action', (req, res) => {
     if (action === 'collect') command = 'npm run collect';
     else if (action === 'analyze') command = 'npm run analyze';
     else if (action === 'deploy') {
-        command = 'git add src/data/analyzed_data.json src/data/settings.json && git commit -m "chore: update data from admin panel" && git push || echo "No changes to commit or push failed"';
+        command = 'git add -f src/data/analyzed_data.json src/data/settings.json && git commit -m "chore: update data from admin panel" && git push || echo "No changes to commit or push failed"';
     } else {
         return res.status(400).json({ error: 'Invalid action' });
     }
