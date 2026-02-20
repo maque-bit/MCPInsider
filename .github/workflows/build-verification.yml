@@ -19,8 +19,8 @@ jobs:
       - name: Build Admin
         uses: docker/build-push-action@v5
         with:
-          context: ./src
-          file: ./src/Containerfile
+          context: .
+          file: ./Containerfile
           target: admin-dev
           push: false
           cache-from: type=gha
@@ -29,8 +29,8 @@ jobs:
       - name: Build Collector
         uses: docker/build-push-action@v5
         with:
-          context: ./src
-          file: ./src/Containerfile
+          context: .
+          file: ./Containerfile
           target: collector-dev
           push: false
           cache-from: type=gha
@@ -39,8 +39,8 @@ jobs:
       - name: Build Analyzer
         uses: docker/build-push-action@v5
         with:
-          context: ./src
-          file: ./src/Containerfile
+          context: .
+          file: ./Containerfile
           target: analyzer-dev
           push: false
           cache-from: type=gha
@@ -49,8 +49,8 @@ jobs:
       - name: Build Web
         uses: docker/build-push-action@v5
         with:
-          context: ./src
-          file: ./src/Containerfile
+          context: .
+          file: ./Containerfile
           target: web-dev
           push: false
           cache-from: type=gha
