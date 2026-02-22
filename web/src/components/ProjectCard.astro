@@ -36,7 +36,7 @@ function getCategoryColor(cat: string) {
 ---
 
 {viewMode === 'grid' ? (
-  <a href={`/projects/${slug}`} class="block group h-full">
+  <a href={`${import.meta.env.BASE_URL}projects/${slug}`} class="block group h-full">
     <article data-categories={project.analysis.category.join(',')} class="bg-white/80 backdrop-blur-sm rounded-xl shadow-[0_4px_20px_rgb(0,0,0,0.03)] border border-white/60 hover:shadow-[0_8px_25px_rgb(59,130,246,0.08)] hover:border-blue-200/60 transition-all duration-300 p-5 h-full flex flex-col relative overflow-hidden">
       
       <div class="flex flex-wrap gap-1.5 mb-3">
@@ -66,7 +66,7 @@ function getCategoryColor(cat: string) {
     </article>
   </a>
 ) : (
-  <a href={`/projects/${slug}`} class="block group">
+  <a href={`${import.meta.env.BASE_URL}projects/${slug}`} class="block group">
     <article data-categories={project.analysis.category.join(',')} class="bg-white/80 backdrop-blur-sm shadow-[0_2px_10px_rgb(0,0,0,0.02)] rounded-lg border border-white/60 hover:bg-white/95 hover:shadow-[0_4px_15px_rgb(59,130,246,0.05)] hover:border-blue-200/50 transition-all duration-300 p-4 flex flex-col md:flex-row gap-4 md:items-center">
       
       <div class="flex flex-col md:flex-row gap-4 flex-1 min-w-0 md:items-center">
