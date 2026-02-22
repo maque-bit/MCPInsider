@@ -143,7 +143,8 @@ async function main() {
             const analysis = await analyzeProject(repo);
             if (analysis) {
                 const existing = projectsMap.get(repo.url);
-                const status = existing && existing.status === "published" ? "published" : (settings.auto_publish ? "published" : "draft");
+                // 既存のステータスがあればそれを維持、なければ新規（auto_publish設定依存）
+                const status = existing && existing.status ? existing.status : (settings.auto_publish ? "published" : "draft");
 
                 projectsMap.set(repo.url, {
                     ...repo,
