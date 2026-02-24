@@ -1,0 +1,31 @@
+---
+interface Props {
+  title?: string;
+  icon?: string;
+  className?: string;
+  variant?: 'default' | 'gradient' | 'glass';
+}
+
+const { title, icon, className = "", variant = 'default' } = Astro.props;
+
+const variantClasses = {
+  default: "bg-white border border-gray-100 shadow-sm",
+  gradient: "bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-100 shadow-sm",
+  glass: "bg-white/40 backdrop-blur-md border border-white/50 shadow-sm"
+};
+---
+
+<div class:list={["rounded-2xl overflow-hidden mb-6", variantClasses[variant], className]}>
+  {title && (
+    <div class="px-5 py-4 border-b border-gray-100/50 flex items-center justify-between">
+      <h3 class="font-bold text-gray-900 flex items-center gap-2">
+        {icon && <span class="text-xl">{icon}</span>}
+        {title}
+      </h3>
+      <slot name="header-action" />
+    </div>
+  )}
+  <div class="p-5">
+    <slot />
+  </div>
+</div>

@@ -1,0 +1,15 @@
+{
+    "name": "mcp-news-aggregator",
+    "version": "1.0.0",
+    "description": "AI News Aggregator for MCP Insider",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "dependencies": {
+        "@google/generative-ai": "^0.1.3",
+        "axios": "^1.6.7",
+        "dotenv": "^16.4.5",
+        "rss-parser": "^3.13.0"
+    }
+}

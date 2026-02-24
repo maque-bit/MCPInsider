@@ -1,0 +1,62 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import fs from 'node:fs';
+import path from 'node:path';
+
+const newsDataPath = path.join(process.cwd(), '../src/data/news_data.json');
+let allNews = [];
+try {
+  if (fs.existsSync(newsDataPath)) {
+    allNews = JSON.parse(fs.readFileSync(newsDataPath, 'utf-8'));
+  }
+} catch (e) {}
+
+// Sort by date newest first
+allNews.sort((a, b) => new Date(b.date) - new Date(a.date));
+---
+
+<Layout title="AI Trends & News - MCP Insider">
+  <div class="max-w-4xl mx-auto py-12 px-4">
+    <header class="mb-16 text-center">
+      <h1 class="text-4xl sm:text-5xl font-black text-gray-900 mb-6 tracking-tight">
+        AI Trends & <span class="text-blue-600">News</span>
+      </h1>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto font-medium">
+        AI業界の最新動向とMCPに関連する注目ニュースを、AIが要約してお届けします。
+      </p>
+    </header>
+
+    <div class="space-y-8">
+      {allNews.length > 0 ? allNews.map((news) => (
+        <article class="group bg-white rounded-3xl p-6 sm:p-8 shadow-sm hover:shadow-xl hover:shadow-blue-100/50 border border-gray-100 hover:border-blue-100 transition-all">
+          <div class="flex flex-col md:flex-row gap-6">
+            <div class="flex-1">
+              <div class="flex items-center gap-3 mb-3">
+                <span class="px-2 py-0.5 bg-gray-100 text-gray-600 text-[10px] font-bold rounded uppercase">
+                  {news.source}
+                </span>
+                <span class="text-xs text-gray-400 font-medium">
+                  {new Date(news.date).toLocaleDateString('ja-JP')}
+                </span>
+              </div>
+              <h2 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
+                <a href={`${import.meta.env.BASE_URL}news/${news.slug}`}>{news.title_ja || news.title}</a>
+              </h2>
+              <p class="text-gray-600 text-sm leading-relaxed line-clamp-2 mb-4">
+                {news.summary_ja}
+              </p>
+              <a href={`${import.meta.env.BASE_URL}news/${news.slug}`} class="text-sm font-bold text-blue-600 hover:text-blue-800 inline-flex items-center gap-1 group/link">
+                要約を詳しく読む
+                <svg class="w-4 h-4 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+      )) : (
+        <div class="text-center py-20 bg-gray-50 rounded-3xl border border-dashed border-gray-200">
+          <p class="text-gray-500 font-bold">現在、新しいニュースを収集しています...</p>
+        </div>
+      )}
+    </div>
+  </div>
+</Layout>
