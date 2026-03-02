@@ -17,6 +17,7 @@ const latestNews = allNews.slice(0, 5);
 // Read data
 const dataPath = path.resolve(process.cwd(), '../src/data/analyzed_data.json');
 let projects = [];
+let lastUpdatedStr = '';
 let loadError = null;
 
 console.log(`[Build] Attempting to read data from: ${dataPath}`);
@@ -25,6 +26,10 @@ try {
   const raw = fs.readFileSync(dataPath, 'utf-8');
   const parsed = JSON.parse(raw);
   projects = parsed.projects.filter((p: any) => p.status === 'published');
+  if (parsed.last_updated) {
+    const d = new Date(parsed.last_updated);
+    lastUpdatedStr = d.toLocaleDateString('ja-JP', { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' });
+  }
   console.log(`[Build] Successfully loaded ${parsed.projects.length} projects (${projects.length} published)`);
 } catch (e: any) {
   console.error("[Build] Failed to read analyzed data:", e);
@@ -71,6 +76,7 @@ const featuredProject = projects.length > 0 ? projects[Math.floor(Math.random() 
         </h1>
         <p class="text-[15px] sm:text-base text-gray-500 max-w-2xl mx-auto font-medium mb-12">
           開発者のためのModel Context Protocolサーバーの一覧です。
+          {lastUpdatedStr && <span class="block mt-2 text-sm text-gray-400">最終更新: {lastUpdatedStr}</span>}
         </p>
       </section>
 
