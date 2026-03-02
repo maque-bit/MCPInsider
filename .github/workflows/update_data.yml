@@ -1,0 +1,70 @@
+name: Automated Data Update
+
+on:
+  schedule:
+    # 毎週火曜日 日本時間 午前8時 (UTC 月曜 23:00) に実行
+    - cron: '0 23 * * 1'
+  workflow_dispatch: # 手動実行用トリガー
+
+permissions:
+  contents: write # 変更をコミット・プッシュするために必要
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          # push後の後続ワークフロー(Deploy等)をトリガーさせるために必要
+          token: ${{ secrets.GH_TOKEN || secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+          cache-dependency-path: './src/collector/package-lock.json' # dummy or just rely on default behavior
+          
+      # 依存関係のインストール（各プロジェクト）
+      - name: Install dependencies
+        run: |
+          npm install --prefix src/collector
+          npm install --prefix src/analyzer
+          npm install --prefix src/news
+
+      # データ収集 (Collector)
+      - name: Run Data Collector
+        run: npm start --prefix src/collector
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN || secrets.GITHUB_TOKEN }}
+          
+      # データ分析・要約 (Analyzer)
+      - name: Run Data Analyzer
+        run: npm start --prefix src/analyzer
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          
+      # ニュース更新 (News)
+      - name: Run News Updater
+        run: npm start --prefix src/news
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
+      # 変更があればコミット＆プッシュ
+      - name: Commit and Push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          # src/data 配下の変更を確認
+          git add src/data/
+          
+          # 変更がなければ正常終了、あればコミットしてプッシュ
+          if git diff --staged --quiet; then
+            echo "No changes in data files to commit."
+          else
+            git commit -m "chore(data): auto update by github actions"
+            git push
+            echo "Successfully committed and pushed updated data!"
+          fi

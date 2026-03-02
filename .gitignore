@@ -1,6 +1,7 @@
 # Default: Ignore everything in root
 /*
 !/.gitignore
+!/.github/
 !/src/
 !/scripts/
 !/admin/
@@ -8,6 +9,10 @@
 !/Containerfile
 !/compose.yaml
 !/package.json
+!/HANDOVER.md
+!/PROJECT_MISSION.md
+!/Project_Mission.md
+
 
 # Explicitly ignore specific src contents if needed (redundant but safe)
 src/config/.env
